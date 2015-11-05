@@ -2,22 +2,103 @@
 
 Course materials &amp; problems for HackBulgaria's Programming 101 with C#. Starting November 2015.
 
-## Course overview
+## Course Program
 
-In this course we are going to write a lot of code and work in teams on interesting projects.
+### Week 1
 
-This is an overview of the topics that are going to be included in the course:
+* Working with Visual Studio - projects, solutions, compiling & running.
+* Basic cmd commands
+* Introducing C# with syntax, types & language constructs
+* Problem solving & debugging with C#
 
-* Getting to know the C# language and Visual Studio as an IDE.
-* Solving algo & math problems.
-* Working with command-line tools like NuGet & PowerShell.
-* Test Driven Development
-* Working with git & GitHub
-* Playing git in multiplayer mode - working & collaborating in teams.
-* Figuring out Object Oriented Programming in the C# language
-* Designing & Programming console applications
-* Consuming different APIs and services.
-* Working with relational databases & understanding the relation model.
-* Working with database drivers & ORM
-* Working with LINQ
-* Taking steps into Web & Mobile territory.
+### Week 2
+
+* More debugging practices with Visual Studio and C#
+* Working with git and TFS
+* Working with named parameters, params keyword, yield & other specific operators.
+
+### Week 3
+
+* Introducing C# OOP concepts & Solving OOP problems
+  * classes/structs/enums: members (fields/properties/methods)
+  * modifiers (encapsulation)
+  * namespaces
+  * Objects, base Object type, class/struct
+  * base methods: `ToString()`, `Equals()`, `GetHashCode()`
+  * constructors
+  * redefining operators
+  * static members
+
+### Week 4
+
+* Introducing Generic Types
+* Introducing C# Collections & data structures in C#
+* Solving problems with different data structures.
+
+### Week 5
+
+* Second take on C# OOP concepts
+  * Interfaces & standard interfaces: `IEnumerable`, `IComparable`
+  * Inheritence & Abstract Classes
+  * Polymorhism
+  * Overloading vs. Overring
+
+### Week 6
+
+* Introducing delegates and events
+* Working with nested & anonymous Classes
+* Static constructors
+* Introducing exceptions in C#
+
+
+### Week 7
+
+* Introducing LINQ and working with LINQ over collections
+* Introducing lambda expressions
+* Introducing IO in C# - working with files and streams
+* Introducing XML as a data format. Working with LIQN to XML
+* Data serialization to XML and binary
+
+
+### Week 8
+
+* Introducing Test Driven Development
+* Introducing review process in software development
+* Working with tools like stylecop
+* Intoducing some basic UI with WinForms
+* Solving problems in teams
+
+### Week 9
+
+* Introducing Threads and background workers and tasks.
+* async / await concept
+
+### Week 10
+
+* Looking at the bigger picture - objected oriented design
+* Desining larger systems & making bigger software projects using everything we know up to now.
+
+### Week 11
+
+* Introducing NuGet and working with 3rd party libraries.
+  * Working with JSON serializers and HTTP clients
+
+### Week 12
+
+* Introducing databases - SQL, connections & data readers.
+
+### Week 13
+
+* Introducing the concept for ORM with Entity Framework
+
+### Week 14, 15, 16
+
+* Introducing Reflection in C#
+* How does it work? CLR, Virtual machines & .NET overview
+* Working with technologies
+  * ASP.NET, MVC
+  * ASP.NET, WebAPI
+  * WPF & XAML
+
+
+
