@@ -1,4 +1,4 @@
-# Warmpup problems to get started in every language
+# Warmup problems to get started in every language
 
 This are the problems that you expect in every programming course.
 
