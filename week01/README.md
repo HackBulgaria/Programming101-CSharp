@@ -12,7 +12,7 @@ Read the following articles to get you started:
 * **TODO**: articles/tutorials on .Net basic constructs
   * C# operators
   * program flow - for, while, foreach etc
- * **TODO**: articles/tutorials on .Net basic data types
+* **TODO**: articles/tutorials on .Net basic data types
   * data types - int, char, string etc; basic operations with them; basic builtin methods & casting (ToString(), int.Parse() etc)
   * basic collections - Arrays(+multidimensional, jagged),  List, Dictionary etc (not very deep into them, just how to use them)
 * **TODO**: article on the most common Console methods
