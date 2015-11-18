@@ -11,3 +11,6 @@ In order to be prepared for the course & start solving problems from day 1, you 
 * If you come from Java or C++, you may read the following articles:
   * [A 15 Minute Intro to C# for Java Developers](http://www.techhui.com/profiles/blogs/a-15-minute-intro-to-c-for), [Java and C# Comparison](http://www.harding.edu/fmccown/java_csharp_comparison.html)
   * [10 Things C++ Developers Learning C# Should Know](http://geekswithblogs.net/BlackRabbitCoder/archive/2010/08/12/10-things-c-developers-learning-c-should-know.aspx)
+* Some good books on C# and .Net net
+  * [Pro C# 5 and the .Net 4.5 Framework](http://www.apress.com/9781430242338)
+  * [CLR via C#](http://www.amazon.com/CLR-via-Edition-Developer-Reference/dp/0735667454)
