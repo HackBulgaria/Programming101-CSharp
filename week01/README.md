@@ -22,3 +22,11 @@ During the first week you'll get acquainted with the Visual Studio development e
 * .Net collections
  * [Arrays](http://www.tutorialspoint.com/csharp/csharp_arrays.htm), [Multidimensional Arrays](http://www.tutorialspoint.com/csharp/csharp_multi_dimensional_arrays.htm), [Jagged Arrays](http://www.tutorialspoint.com/csharp/csharp_jagged_arrays.htm)
  * [.Net Collections](http://www.growingwiththeweb.com/2013/02/what-data-structure-net-collections-use.html) - the most commonly used are List, Dictionary
+
+## More debugging techniques and some useful cmd commands
+
+[Visual Studio debugging tutorial](http://www.codeproject.com/Articles/79508/Mastering-Debugging-in-Visual-Studio-A-Beginn)
+[Navigating in Command Prompt](http://www.pcstats.com/articleview.cfm?articleid=1723&page=3)
+[Input redirection in Command Prompt](https://technet.microsoft.com/en-us/library/bb490982.aspx)
+[Comparing files in Command Prompt](http://ss64.com/nt/fc.html)
+[Working with bitmaps in C#](https://msdn.microsoft.com/en-us/library/system.drawing.bitmap%28v=vs.110%29.aspx)
