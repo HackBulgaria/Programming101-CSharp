@@ -14,7 +14,7 @@ Course materials &amp; problems for HackBulgaria's Programming 101 with C#. Star
 ### Week 2
 
 * Working with methods in C#: named parameters, params keyword, yield, ref, out.
-Reference types and value types.
+Reference types and value types. Overloads and optional parameters.
 * More built-in types: DateTime, CultureInfo, formatting strings, the TryParse/TryGet concept
 * Working with source control systems: git and TFS
 
