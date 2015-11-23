@@ -13,9 +13,10 @@ Course materials &amp; problems for HackBulgaria's Programming 101 with C#. Star
 
 ### Week 2
 
-* More debugging practices with Visual Studio and C#
-* Working with git and TFS
-* Working with named parameters, params keyword, yield & other specific operators.
+* Working with methods in C#: named parameters, params keyword, yield, ref, out.
+Reference types and value types.
+* More built-in types: DateTime, CultureInfo, formatting strings, the TryParse/TryGet concept
+* Working with source control systems: git and TFS
 
 ### Week 3
 
