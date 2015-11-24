@@ -2,6 +2,12 @@
 
 Course materials &amp; problems for HackBulgaria's Programming 101 with C#. Starting November 2015.
 
+## Partners
+
+The course is happening thanks to:
+
+![Nemetschek_logo](/images/nemetschek.png)
+
 ## Course Program
 
 ### Week 1
