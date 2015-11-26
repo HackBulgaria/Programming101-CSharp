@@ -136,7 +136,7 @@ Hint: Use File.WriteAllText to output the result.
 
 ## Clock angle ##
 
-Write a method which calculates the angle (degree) between hour and minute hands. 
+Write a method which calculates the angle (degree) between clock hour and minute hands. 
 
 int GetClockHandsAngle(DateTime time)
 
