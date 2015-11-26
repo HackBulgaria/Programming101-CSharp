@@ -144,6 +144,6 @@ int GetClockHandsAngle(DateTime time)
 
 2) Calculate the angle if the hour hand points doesn't point exactly to the number (when the time is 4:30 then the hour hand points exactly in the middle between 4 and 5 o'clock)
 
-Example : 15:00 is 90 degree 
+Example : the angle is 90 degrees at 3:00, 15:00, 9:00 and 21:00 )
 
 Hint : Use Math library
