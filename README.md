@@ -15,7 +15,8 @@ Course materials &amp; problems for HackBulgaria's Programming 101 with C#. Star
 
 * Working with methods in C#: named parameters, params keyword, yield, ref, out.
 Reference types and value types. Overloads and optional parameters.
-* More built-in types: DateTime, CultureInfo, formatting strings, the TryParse/TryGet concept
+* More built-in types: DateTime, CultureInfo, formatting strings,
+the TryParse/TryGet concept, Math, Random
 * Working with source control systems: git and TFS
 
 ### Week 3
