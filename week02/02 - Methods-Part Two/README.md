@@ -33,8 +33,8 @@ intersecting appointments. Write a method which takes two equal-sized
 arrays as arguments and prints one line for each pair of intersecting
 appointments. The line should be in the format:
 
-The appointment starting at dd/mm/yyyy hh:mm intersects the
-appointment starting at dd/mm/yyyy hh:mm with exactly mmmm minutes.
+`The appointment starting at dd/mm/yyyy hh:mm intersects the
+appointment starting at dd/mm/yyyy hh:mm with exactly mmmm minutes.`
 
 `void FindIntersectingAppointments(DateTime[] startDates, TimeSpan[] durations)`
 
@@ -72,16 +72,18 @@ He wants to be able to check that for any given date range.
 
 The format of Pesho's file is as below:
 
+```
 25.03.2015г.;теглене;25.12лв
 28.03.2015г.;теглене;215.22лв
 29.03.2015г.;теглене;115.62лв
 30.03.2015г.;теглене;13.37лв
 31.03.2015г.;внасяне;1000.00лв
 01.04.2015г.;теглене;400.00лв
+```
 
 i.e.
 
-<date>;<operation[теглене|внасяне]>;<amount[X.XXлв]>
+`<date>;<operation[теглене|внасяне]>;<amount[X.XXлв]>`
 
 Hint: Use File.ReadAllText to read the contents of the file.
 
@@ -125,12 +127,14 @@ two digits after the decimal point. The numbers should be separated
 by at least one space and should be right aligned to the size of their
 column (which you can consider to be fixed at 8 characters).
 
-void GenerateRandomMatrix(int rows, int columns, string fileName)
+`void GenerateRandomMatrix(int rows, int columns, string fileName)`
 
+```
 3x3:
    13.37  545.87   75.64
   184.37 1000.00  684.64
     1.00    9.67  378.68
+```
    
 Hint: Use File.WriteAllText to output the result.
 
@@ -138,7 +142,7 @@ Hint: Use File.WriteAllText to output the result.
 
 Write a method which calculates the angle (degree) between clock hour and minute hands. 
 
-int GetClockHandsAngle(DateTime time)
+`int GetClockHandsAngle(DateTime time)`
 
 1) Calculate the angle if you consider that the hour hand points to exact hour (when the time is 4:34 then the hour hand points exactly to 4 o'clock)
 
