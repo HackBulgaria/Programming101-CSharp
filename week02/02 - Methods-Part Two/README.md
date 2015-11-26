@@ -142,7 +142,7 @@ int GetClockHandsAngle(DateTime time)
 
 1) Calculate the angle if you consider that the hour hand points to exact hour (when the time is 4:34 then the hour hand points exactly to 4 o'clock
 
-2) Calcualate the angle if the hour hand points doesn't point exactly to the number (when the time is 4:30 then the hour hand points exactly in the middle between 4 and 5
+2) Calculate the angle if the hour hand points doesn't point exactly to the number (when the time is 4:30 then the hour hand points exactly in the middle between 4 and 5
 
 Example : 15:00 is 90 degree 
 
