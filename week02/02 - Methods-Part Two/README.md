@@ -9,10 +9,10 @@ Fridays 13ths there are in that range
 
 ## Date sums ##
 
-Find all dates in a given whose digits of the month number
-and the day number sum up to a given value. Print each of
-them on the console in the format 
-`dd/mm/yyyy: d+d+m+m=sum`.
+Find all dates in a given year whose digits of the month number,
+the digits of the day number and the digits of the year
+sum up to a given value. Print each of them on the console in the format: 
+`dd/mm/yyyy: d+d+m+m+y+y+y+y=sum`.
 
 `void PrintDatesWithGivenSum(int year, int sum)`
 
