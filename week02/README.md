@@ -31,3 +31,42 @@ most commonly used source control systems - git and TFS.
   * [Dictionary.TryGetValue](https://msdn.microsoft.com/en-us/library/bb347013%28v=vs.110%29.aspx)
 * [Math](https://msdn.microsoft.com/en-us/library/system.math%28v=vs.110%29.aspx)
 * [Random](https://msdn.microsoft.com/en-us/library/system.random%28v=vs.110%29.aspx)
+
+## Working with Git
+
+* Download and install [Git for Windows](https://git-for-windows.github.io/)
+* Git resources:
+ * http://guides.github.com/
+ * http://scotch.io/bar-talk/git-cheat-sheet
+ * http://stackoverflow.com/questions/7076164/terminology-used-by-git
+ * http://git-scm.com/book/en/v2/Getting-Started-Git-Basics
+ * Most commonly used commands: `add`, `commit`, `merge`, `clone`, `fetch`, `push`
+* Configure Visual Studio as a merge tool for Git:
+ * Open `C:\users\<username>\.gitconfig` and add the following:
+ ```
+[diff]
+	tool = vsdiffmerge
+[difftool]
+	prompt = true
+	keepBackup = false
+[difftool "vsdiffmerge"]
+	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
+	keepBackup = false
+	trustexistcode = true
+[merge]
+	tool = vsdiffmerge
+[mergetool]
+	prompt = true
+	keepBackup = false
+[mergetool "vsdiffmerge"]
+	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
+	keepBackup = false
+	trustexistcode = true
+ ```
+
+## Working with TFS
+* Create a free account at [Visual Studio Online](https://www.visualstudio.com/products/visual-studio-team-services-vs) - there you can create a TFS repository to work with
+* TFS resources:
+ * [Getting to know TFS source control](https://www.youtube.com/watch?v=u93XS_39YAA)
+ * [Exploring Team Foundation Version Control](https://msdn.microsoft.com/en-us/library/ms181280%28v=vs.90%29.aspx)
+ * https://msdn.microsoft.com/en-us/Library/vs/alm/code/overview
