@@ -29,7 +29,7 @@ While on the `master` branch, merge it with the `panda` branch. You will see the
 
 In order to fix the merge conflict, we need to use a merge tool. First make sure you have configured git to use [Visual Studio as a merge tool](https://github.com/HackBulgaria/Programming101-CSharp/blob/master/week02/README.md#working-with-git)
 
-Now run `git mergetool` and start Visual Studio merge tool should be started. Get familiar with the interface. We want the file to look like this after the merge:
+Now run `git mergetool` and Visual Studio merge tool should be started. Get familiar with the interface. We want the file to look like this after the merge:
 
 ```
 This is line one.
