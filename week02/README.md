@@ -42,7 +42,7 @@ most commonly used source control systems - git and TFS.
  * http://git-scm.com/book/en/v2/Getting-Started-Git-Basics
  * Most commonly used commands: `add`, `commit`, `merge`, `clone`, `fetch`, `push`
 * Configure Visual Studio as a merge tool for Git:
- * Open `C:\users\<username>\.gitconfig` and add the following:
+ * Open `C:\users\<username>\.gitconfig` and add the following (modify the path to `vsdiffmerge.exe` if needed):
  ```
 [diff]
 	tool = vsdiffmerge
@@ -50,7 +50,7 @@ most commonly used source control systems - git and TFS.
 	prompt = true
 	keepBackup = false
 [difftool "vsdiffmerge"]
-	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
+	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
 	keepBackup = false
 	trustexistcode = true
 [merge]
@@ -59,7 +59,7 @@ most commonly used source control systems - git and TFS.
 	prompt = true
 	keepBackup = false
 [mergetool "vsdiffmerge"]
-	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
+	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
 	keepBackup = false
 	trustexistcode = true
  ```
