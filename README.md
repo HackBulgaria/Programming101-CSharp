@@ -40,17 +40,20 @@ the TryParse/TryGet concept, Math, Random
 
 ### Week 4
 
-* Introducing Generic Types
-* Introducing C# Collections & data structures in C#
-* Solving problems with different data structures.
-
-### Week 5
-
 * Second take on C# OOP concepts
   * Interfaces & standard interfaces: `IEnumerable`, `IComparable`
   * Inheritence & Abstract Classes
   * Polymorhism
-  * Overloading vs. Overring
+  * Overloading vs Overriding vs Hiding
+  * When to use inheritance and when to use a member
+    * is vs has
+
+### Week 5
+
+* Introducing Generic Types
+* Introducing C# Collections & data structures in C#
+* Solving problems with different data structures.
+* Nullable types
 
 ### Week 6
 
