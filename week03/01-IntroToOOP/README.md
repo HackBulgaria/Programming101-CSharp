@@ -13,6 +13,30 @@ Make a factory method `Now()` for your class, returning the Time at the present 
 
 See http://en.wikipedia.org/wiki/Factory_method_pattern
 
+## Pair
+
+Make a class `Pair`, representing a pair of *Objects* (later we will revisit this with Generics)
+
+Create properties for the first and second member of the pair.
+
+Implement the ToString method, giving a meaningful representation of the class.
+Override the equals method from Object => two pairs are equal if both their members are equal. Also define operators == and !=.
+Override the `GetHashCode()` method:
+```
+public override int GetHashCode()
+{
+    unchecked
+    {
+        int hash = 17;
+        hash = hash * 23 + x.GetHashCode();
+        hash = hash * 23 + y.GetHashCode();
+        return hash;
+    }
+}
+```
+
+Make the class *immutable*.
+
 ## Fractions
 
 In a Visual Studio project create a Fraction class. After creating the class write some test cases to demonstrate its functionality.
