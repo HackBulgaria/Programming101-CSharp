@@ -1,5 +1,31 @@
 # Introduction to OOP
 
+## Fractions
+
+In a Visual Studio project create a Fraction class:
+* Create a constructor with 2 arguments - the numerator and the denominator
+    * if the denominator=0 the constructor should throw an exception: `throw new ArgumentException("Denominator cannot be 0")`
+* Create properties for the numerator and denominator (when changing the denominator check for 0)
+* Override `ToString()`: x/y
+* Override `Equals()`
+* define operators == and !=
+* Override `GetHashCode()`:
+```
+public override int GetHashCode()
+{
+    unchecked
+    {
+        int hash = 17;
+        hash = hash * 23 + x.GetHashCode();
+        hash = hash * 23 + y.GetHashCode();
+        return hash;
+    }
+}
+```
+* define operators +, -, *, / between 2 Fractions
+* define operators +, -, *, / between a Fraction and a double (return double)
+* define explicit casting from Fraction to double
+
 ## Geometry Figures
 
 Create a Visual Studio project GeometryFigures. After creating each class write some test cases to demonstrate its functionality.
