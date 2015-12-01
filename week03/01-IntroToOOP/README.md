@@ -33,7 +33,7 @@ public override int GetHashCode()
 
 Create an immutable class LineSegment:
 * Create a constructor with 2 arguments of type Point - the two ends of the line segment
-  ** if the points are equal the constructor should throw an exception: `throw new ArgumentException("Cannot create a line segment with zero length")`
+  * if the points are equal the constructor should throw an exception: `throw new ArgumentException("Cannot create a line segment with zero length")`
 * Create 2 readonly properties for displaying the two ends of the segment
 * Create a method `GetLength()`
 * Override `ToString()`: Line[(x1,y1), (x2,y2)]
@@ -60,7 +60,7 @@ public override int GetHashCode()
 Create an immutable class Rectangle:
 
 * Create a constructor with 2 arguments of type Point - the points at the opposite vertices
-  ** if the points are on the same coordinate asix throw an exception
+  * if the points are on the same coordinate axis throw an exception
 * Create 4 readonly properties for displaying the 4 vertices of the rectangle (of type Point)
 * Create 4 readonly properties for displaying the 4 edges of the rectangle (of type LineSegment)
 * Create 2 readonly properties for dispalying the width and height of the rectangle
