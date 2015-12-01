@@ -2,7 +2,7 @@
 
 ## Fractions
 
-In a Visual Studio project create a Fraction class:
+In a Visual Studio project create a Fraction class. After creating the class write some test cases to demonstrate its functionality.
 * Create a constructor with 2 arguments - the numerator and the denominator
     * if the denominator=0 the constructor should throw an exception: `throw new ArgumentException("Denominator cannot be 0")`
 * Create properties for the numerator and denominator (when changing the denominator check for 0)
@@ -82,6 +82,9 @@ public override int GetHashCode()
     }
 }
 ```
+
+Now go back to the Point class:
+* define operator + with 2 Points that return a LineSegment
 
 ### Rectangle
 
