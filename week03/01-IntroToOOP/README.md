@@ -15,7 +15,7 @@ See http://en.wikipedia.org/wiki/Factory_method_pattern
 
 ## Pair
 
-Make a class `Pair`, representing a pair of *Objects* (later we will revisit this with Generics)
+In a Visual Studio project create a class `Pair`, representing a pair of *Objects* (later we will revisit this with Generics)
 
 Create properties for the first and second member of the pair.
 
@@ -139,3 +139,20 @@ Create an immutable class Rectangle:
 * Override `Equals()`
 * define operators == and !=
 * Override `GetHashCode()`
+
+## Vector
+
+In a Visual Studio project create a Vector class for n-dimensional vectors. After creating the class write some test cases to demonstrate its functionality.
+
+* Create a constructor that takes a variable number of arguments - the coordinates
+* Create a constructor that copies an existing vector
+* Create an indexer for getting and setting each coordinate of the vector
+* Create a property for returning the dimensionality of the vector
+* Create a method for returning the length of the vector
+* Override `ToString()`
+* Override `Equals()`
+* define operators == and !=
+* Override `GetHashCode()`
+* define operators +, - between vectors (check if the 2 vectors have the same dimension!)
+* define operators +, -, *, / between a vector and a scalar
+* define operator * - the dot product of 2 vectors (check if the 2 vectors have the same dimension!)
