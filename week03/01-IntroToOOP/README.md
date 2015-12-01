@@ -9,9 +9,7 @@ Make an *easy-to-use* constructor (from client perspective), that would represen
 Implement the `ToString()` method, returning the time and date in format : "hh:mm:ss dd.MM.YY". 
 
 *Bonus*
-Make a factory method `Now()` for your class, returning the Time at the present moment :)
-
-See http://en.wikipedia.org/wiki/Factory_method_pattern
+Make a static method `Now()` for your class, returning the Time at the present moment :)
 
 ## Pair
 
