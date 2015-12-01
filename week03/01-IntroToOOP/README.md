@@ -1,5 +1,18 @@
 # Introduction to OOP
 
+## Time
+
+In a Visual Studio project create a class `Time` to hold information about the current time and *the current date* .
+
+Make an *easy-to-use* constructor (from client perspective), that would represent the time and date the client wants to hold in your class.
+
+Implement the `ToString()` method, returning the time and date in format : "hh:mm:ss dd.MM.YY". 
+
+*Bonus*
+Make a factory method `Now()` for your class, returning the Time at the present moment :)
+
+See http://en.wikipedia.org/wiki/Factory_method_pattern
+
 ## Fractions
 
 In a Visual Studio project create a Fraction class. After creating the class write some test cases to demonstrate its functionality.
