@@ -150,7 +150,8 @@ Add the ability to take coins -> figure for the coins to be compatible with the 
 
 ## Valid money
 We have created a mechanism for storing the bills and coins -> now we will want to take only valid money:
-coins [1,2,5,10,20,50,1]
+
+coins = [1,2,5,10,20,50,1]
 bills = [2,5,10,20,50,100]
 
 If we are offered money that we think is not valid - it is not contained in our lists of valid currency. We need to reject it.
