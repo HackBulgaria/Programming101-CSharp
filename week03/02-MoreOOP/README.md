@@ -11,8 +11,8 @@ The cash desk will do the following things:
 
 ## Setup the Visual Studio solution
 
-* Create an empty Visual Studio solution called **CashDeskProblem** (use the Empty Solution template)
-* Add a Library Project called **CashDesk** (won't have a Main method)
+* Create an empty Visual Studio solution called **CashDeskProblem** (use the Blank Solution template - in Other Templates folder)
+* Add a Class Library Project called **CashDesk** (won't have a Main method)
 * Add a Console Application Project called **CashDeskApplication** (will have a Main method)
   * Add a reference to the **CashDesk** project - in the **CashDeskApplication** project:
     * Right click references->Add reference
