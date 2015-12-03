@@ -7,6 +7,7 @@ Course materials &amp; problems for HackBulgaria's Programming 101 with C#. Star
 The course is happening thanks to the following companies:
 
 [![Nemetschek Bulgaria](partners/Nemetschek.png)](http://www.nemetschek.bg/)
+[![SAP Labs Bulgaria](partners/SAP_Labs_Bulgaria.png)](https://go.sap.com/bulgaria/index.html)
 
 
 ## Course Program
