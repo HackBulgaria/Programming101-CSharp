@@ -142,3 +142,38 @@ inspect
 // 50$ bills - 1
 // 100$ bills - 3
 ```
+
+
+# Bonus
+## Coins
+Add the ability to take coins -> figure for the coins to be compatible with the fills -> we will need batchCoins as well
+
+## Valid money
+We have created a mechanism for storing the bills and coins -> now we will want to take only valid money:
+coins [1,2,5,10,20,50,1]
+bills = [2,5,10,20,50,100]
+
+If we are offered money that we think is not valid - it is not contained in our lists of valid currency. We need to reject it.
+The program must not stop! It should only display to the used that his money has been rejected.
+* If the users offer a batch of money, it should reject all of the money.
+* * Bonus: Make the program reject only the invalid money, and print which 
+
+## Give change
+A lot of people tend to save up coins. And most of the time they will and ask to gibe them bills for coins
+Being good programmers, we will want to make things easy:
+Make a method that takes a batch of coins and returns a batch of bills 
+* Ofcourse we will have to update the inventory of money after this operation: 
+* The change must occur in the most optimal way based on out inventory:
+* * if we give 50,50,50, 20, 20, 20, 20, 10, 10 in coins we will have to return 2 bills and 50 coins 
+* * the returned batch should never be  worse than the input
+
+## Buy stuff
+We have decided that our program is amazing! and will now want to sell it to all the shops in sofia.
+So extend the user interface (and logic) to allow the user to sell items.
+After choosing this option we will want to give the value of the product that we want to sell
+Then we will input the money that was given to us
+And our program will have to print one of the following:
+* Not enough money
+* Cannot give back change - if the give us more money that the product is worth
+* The exact change we will have to return:
+* * for instance "return 2 bills, 50 coins, 2 coins" AND NOT "2,52"
