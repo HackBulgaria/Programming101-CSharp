@@ -9,9 +9,20 @@ The cash desk will do the following things:
 * Keep a total count
 * Tell us some information about the bills it has
 
+## Setup the Visual Studio solution
+
+* Create an empty Visual Studio solution called **CashDeskProblem** (use the Empty Solution template)
+* Add a Library Project called **CashDesk** (won't have a Main method)
+* Add a Console Application Project called **CashDeskApplication** (will have a Main method)
+  * Add a reference to the **CashDesk** project - in the **CashDeskApplication** project:
+    * Right click references->Add reference
+    * In the Project References tab select the **CashDesk** project
+    * Click OK
+    * Now you can use the classes from **CashDesk** inside the **CashDeskApplication** project
+
 ## The Bill class
 
-Create a class, called `Bill` which takes one parameter to its constructor - the `amount` of the bill - an integer.
+Inside the **CashDesk** library project create a class, called `Bill` which takes one parameter to its constructor - the `amount` of the bill - an integer.
 
 The class should implement:
 
@@ -40,6 +51,8 @@ a == c // True
 ## The BatchBill class
 
 We are going to implement a class, which represents more than one bill. A `BatchBill`!
+
+Inside the **CashDesk** library project create a `BatchBill` class.
 
 The class takes a list of `Bills` as the single constructor argument.
 
@@ -71,7 +84,7 @@ foreach(var bill in batch)
 
 ## The CashDesk classs
 
-Implement a `CashDesk` class, which has the following methods:
+Inside the **CashDesk** library project implement a `CashDesk` class, which has the following methods:
 
 * `TakeMoney(money)`, where `money` can be either `Bill` or `BatchBill` class - adds money to the cash desk
 * `Total()` - returns the total amount of money currenly in the desk
@@ -104,7 +117,7 @@ desk.Inspect();
 
 ## The CashDesk application
 
-Finally, create a console Cash Desk application that takes these commands from the user:
+Finally inside the **CashDeskApplication** project, create a console Cash Desk application that takes these commands from the user:
 
 * takebill \<number> - adds a bill with value \<number> to the cashdesk
 * takebatch \<number1> \<number2> ... - adds a batch of bills to the cashdesk
