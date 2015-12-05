@@ -24,5 +24,5 @@ Create an ShopInventory class which contains all products available in an invent
 * The price with the taxes must be calculated with the help of the VAT Tax calculator. 
 * The inventory must keep all available products (they should be passed to the constructor of the class). 
 * The inventory should have a method called Audit which should tell the user how much money will be earned if all products are sold out
-*Implement class order which contains information about a particular order (product's ids that must be bought + their quantity)
+* Implement class order which contains information about a particular order (product's ids that must be bought + their quantity)
 * The Inventory class must implements a method RequestOrder. It should get an order and calculates its amount. If the inventory doesn't contain all the required products then a specific exception must be thrown - NotAvailableInInventoryException. 
