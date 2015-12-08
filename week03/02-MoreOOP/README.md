@@ -178,3 +178,15 @@ And our program will have to print one of the following:
 * Cannot give back change - if the give us more money that the product is worth
 * The exact change we will have to return:
 * * for instance "return 2 bills, 50 coins, 2 coins" AND NOT "2,52"
+
+**Note** The bill and coin values are intentionally chosen so that the Greedy algorithm works for getting the optimal change: [Greedy Algorithm](http://www.personal.kent.edu/~rmuhamma/Algorithms/MyAlgorithms/Greedy/greedyIntro.htm). For example if we have the bills and coins `(10, 10, 10, 5, 5, 5, 5, 5, 1, 0.5, 0.5, 0.2, 0.2, 0.2, 0.1, 0.1, 0.02)` and want to get the sum 27.52:
+
+1. We take as many 10$ bills as we can, in this case 2, the remaining sum is `27.52 - 2*10 = 7.52`
+2. We take as many 5$ bills as we can, in this case 1, the remaining sum is `7.52 - 5 = 2.52`
+3. We take as many 2$ bills as we can, but we have 0 of them
+4. We take as many 1$ bills as we can, in this case 1, `2.52 - 1 = 1.52`
+5. We take as many 50c coins as we can, in this case 2, `1.52 - 2*0.5 = 0.52`
+6. We take as many 20c coins as we can, in this case 2, `0.52 - 2*0.2 = 0.12`
+7. We take as many 10c coins as we can, in this case 1, `0.12 - 0.1 = 0.02`
+8. We don't have 5c coins
+9. We take as manu 2c coins as we can, in this case 1, `0.02 - 0.02 = 0`
