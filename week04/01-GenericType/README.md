@@ -11,7 +11,7 @@ Methods which must be implemented in Stack<T> class :
 * Contains(T) Determines whether an element is in the Stack<T>
 
 
-## Change previosly written Bill and BatchBill classes to support generics
+## Change previosly written Bill and BatchBill classes to support generic types
 
 * Bill<T> class Value property should return T type
 
