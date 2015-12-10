@@ -3,7 +3,7 @@
 
 ## Rewrite Pair class from the privous lessons (week 3) to support generic types
 
-## Create generic Stack class
+## Generic Stack class
 The following methods which must be implemented in Stack<T> class :
 * Constructor()
 * Peek() - Returns the object at the top of the Stack<T> without removing it
@@ -12,7 +12,9 @@ The following methods which must be implemented in Stack<T> class :
 * Clear()	- Removes all objects from the Stack<T>
 * Contains(T) Determines whether an element is in the Stack<T>
 
-## Create Dequeue class (double-ended queue) which must be based on List<T> or T[] array.
+## Generic Dequeue class (double-ended queue) 
+
+It must be based on List<T> or T[] array.
 The following methods that must be implemented in Dequeue<T> class :
 
 * Constructor()
