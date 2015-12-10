@@ -17,6 +17,8 @@ Methods which must be implemented in Stack<T> class :
 
 * BatchBill<T> class Total() method should return T type
 
+* Add constraint to T type to be value type
+
 ## LottoGame class
 
 * Create a LottoGame class
