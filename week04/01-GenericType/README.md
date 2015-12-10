@@ -1,5 +1,5 @@
 
-# Create generic C# class
+# Create generic Stack class
 Methods which must be implemented
 * Constructor
 * Peek() - Returns the object at the top of the Stack<T> without removing it.
