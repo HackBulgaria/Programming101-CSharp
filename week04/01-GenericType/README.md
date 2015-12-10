@@ -25,10 +25,11 @@ Methods which must be implemented in Stack<T> class :
 * The group of first three values shares the same C# type (Valid for the second group of three values as well)
 * Ask user to enter any number of combinations it wants
 * Validate if a combination is already entered
-* Create a AddUserCombination method in TotoGame class which adds another user combination to the game (all the combinations must be stored internally in TotoGame class) 
-* Create a GetWinning combination method in TotoGame class which returns the secret winning combination
+* Create an AddUserCombination method in TotoGame class which adds another user combination to the game (all the combinations must be stored internally in TotoGame class) 
+* Create a private GetWinning combination method in TotoGame class which returns the secret winning combination
 * Create a Validate method in TotoGame class which returns the result from the game. The method should return an object from TotoResult class. 
 * TotoResult class must have two properties (IsWinning - bool and MatchedNumbersCount - byte)
 * Print the result if a combination is winning - there is at least 1 matching value from the first group and second group or more than 1 matching value from the any of the groups
+
 
 
