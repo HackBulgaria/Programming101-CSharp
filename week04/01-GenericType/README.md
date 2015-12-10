@@ -17,7 +17,7 @@ Methods which must be implemented in Stack<T> class :
 
 * BatchBill<T> class Total() method should return T type
 
-## Lotto game class
+## LottoGame class
 
 * Create a LottoGame class
 * Create an immutable class Combination{T, U} which accepts 6 values(int, bool, double, etc.).
