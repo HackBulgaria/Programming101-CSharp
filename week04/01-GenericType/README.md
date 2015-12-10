@@ -1,6 +1,6 @@
 
 # Create generic Stack class
-Methods which must be implemented
+Methods which must be implemented in Stack<T> class :
 * Constructor
 * Peek() - Returns the object at the top of the Stack<T> without removing it.
 * Pop()	- Removes and returns the object at the top of the Stack<T>
