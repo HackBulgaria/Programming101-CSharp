@@ -23,7 +23,7 @@ Methods which must be implemented in Stack<T> class :
 * Create an immutable class Combination{T, U} which accepts 6 values(int, bool, double, etc.).
 * Override Equals and GetHashCode methods in order to check if two combinations are identical
 * The group of first three values shares the same C# type (Valid for the second group of three values as well)
-* Ask user to enter any number of combinations it wants
+* Ask the user to enter any number of combinations he wants
 * Validate if a combination is already entered
 * Create an AddUserCombination method in LottoGame class which adds another user combination to the game (all the combinations must be stored internally in LottoGame class) 
 * Create a private GetWinning combination method in TotoGame class which returns the secret winning combination
