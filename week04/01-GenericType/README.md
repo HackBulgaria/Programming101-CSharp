@@ -1,5 +1,7 @@
 
-# Create generic Stack class
+# Week04 - Generic Types - using the built-in generic collections
+
+## Create generic Stack class
 Methods which must be implemented in Stack<T> class :
 * Constructor()
 * Peek() - Returns the object at the top of the Stack<T> without removing it
@@ -9,11 +11,9 @@ Methods which must be implemented in Stack<T> class :
 * Contains(T) Determines whether an element is in the Stack<T>
 
 
-# Change previosly written Bill and BatchBill classes to support generics
+## Change previosly written Bill and BatchBill classes to support generics
 
-## Bill<T> class
-* Value property should return T type
+* Bill<T> class Value property should return T type
 
-## BatchBill<T> class
-* Total() method should return T type
+* BatchBill<T> class Total() method should return T type
 
