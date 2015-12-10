@@ -33,5 +33,8 @@ Methods which must be implemented in Stack<T> class :
 * LottoResult class must have two properties (IsWinning - bool and MatchedNumbersCount - byte)
 * Print the result if a combination is winning - there is at least 1 matching value from the first group and second group or more than 1 matching value from the any of the groups
 
+Combination example :
+{1, 2, 3, "pesho", "gosho", "ivan"}, in the case the first three values are integers and the second three values are string
+
 
 
