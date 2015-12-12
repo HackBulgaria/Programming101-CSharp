@@ -30,7 +30,7 @@ list.Add("s");
 
 Console.WriteLine(list.Count); //output: 3
 
-list.InsertAfter("m", "a");
+list.InsertAfter("g", "a");
 list.InsertAt(10, "z"); //throws an exception - IndexOutOfRangeException
 list.InsertAt(2, "z");
 list.Remove("z");
