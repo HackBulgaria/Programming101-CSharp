@@ -29,7 +29,7 @@ list.Add("a");
 list.Add("s");
 list.Add("s");
 
-Console.WriteLine(list.Count); //output: 3
+Console.WriteLine(list.Count); //output: 4
 
 list.InsertAfter("x", "m");
 list.InsertAt(10, "z"); //throws an exception - IndexOutOfRangeException
