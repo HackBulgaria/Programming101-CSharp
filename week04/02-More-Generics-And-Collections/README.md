@@ -50,15 +50,40 @@ foreach(string value in list)
 ## Dynamic Array
 
 Now lets implement[Dynamic Array data structure](https://en.wikipedia.org/wiki/Dynamic_array)
-The dynamic array should contain a generic type
+The dynamic array should contain a generic type.
 Dynamic array will use arrays instead of nodes to store information.
 
-The methods that the structure should be the same as Linked List
+The methods that the structure should be the same as Linked List:
 
-The rate of grought of the dynamic array should be/ Or how much our internal array will grow if the cuurent is not enought to contain all the information/: 
+* `Add(T value)` - adds element to the end of the list
+* `InsertAfter(T key, T value)` - adds an element after the specified element key
+* `InsertBefore(T key, T value)` - adds an element before the specified element key
+* `InsertAt(int index, T value)` - adds an element at the specified index
+* `Remove(T value)` - deletes the first occurence of the specified element
+* `RemoveAt(int index)` - removes the element at the specified index
+* `Clear()` - clears the elements of the list
+* Property `Count` for the cumber of elements in the list
+* Indexer `T this[int]` - gets or sets the value of the n-th 
+
+The rate of growgth of the dynamic array should be/ Or how much our internal array will grow if the cuurent is not enought to contain all the information/: 
 * the array should double if the curent size is under 2048.
 * If the size is above 2048 resize the array with capacity of 256.
 
 When removing elements if the capicity is 1/3 of the total capacity, make the array shorter by half
+
+## Map
+
+Next implement the [map data structure](https://en.wikipedia.org/wiki/Associative_array). A map stores pair of keys and values like the .Net `Dictionary<T, U>` class. In a Class Library project named Map:
+
+* Create a class `Map<T, U>` - T will be the type of the keys, U the type of the values
+* In the class keep two collections - one for the keys and one for the values. Don't use the builting .Net types but one of the types you created above - 'LinkedList' or 'DynamicArray'
+* Implement the following methods and properties for the Map:
+ * Add(T key, U value)
+ * Contains(T key) - checks if a value with the specified key is in the Map
+ * Remove(T key)
+ * Clear() - removes all elements
+ * Indexer U this[T] - gets or sets the value with the specified key
+    * if the element doesn't exist the getter should throw an error
+    * if the element doesn't exist the setter should add it to the Map
 
 
