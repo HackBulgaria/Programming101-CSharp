@@ -27,15 +27,6 @@ The following methods that must be implemented in Dequeue<T> class :
 * T PeekFromFront()	- Returns the object at the beginning of the Dequeue<T> without removing it.
 * T PeekFromEnd()	- Returns the object at the end of the Dequeue<T> without removing it.
 
-
-## Change previosly written Bill and BatchBill classes to support generic types
-
-* Bill<T> class Value property should return T type
-
-* BatchBill<T> class Total() method should return T type
-
-* Add constraint to T type to be value type
-
 ## LottoGame class
 
 * Create a LottoGame class
