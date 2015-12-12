@@ -47,3 +47,15 @@ foreach(string value in list)
 //s
 ```
 
+## Dynamic Array
+
+Now lets implement[Dynamic Array data structure](https://en.wikipedia.org/wiki/Dynamic_array)
+The dynamic array should contain a generic type
+
+The methods that the structure should be the same as Linked List
+The rate of grought of the dynamic array should be: 
+* the array should double if the curent size is under 2048.
+* If the size is above 2048 resize the array with capacity of 256.
+
+When removing elements if the capicity is 1/3 of the total capacity, make the array shorter by half
+
