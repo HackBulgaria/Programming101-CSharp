@@ -17,6 +17,6 @@ We'll implement [Linked List data structure](https://www.cs.cmu.edu/~adamchik/15
   * `RemoveAt(int index)` - removes the element at the specified index
   * `Clear()` - clears the elements of the list
   * Indexer `T this[int]` - gets or sets the value of the n-th element
-*We should be able to iterate the `LinkedList` class with a for-loop. Hint: See [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable%28v=vs.110%29.aspx) and [foreach](https://msdn.microsoft.com/en-us/library/ttw7t8t6.aspx)
+* We should be able to iterate the `LinkedList` class with a for-loop. Hint: See [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable%28v=vs.110%29.aspx) and [foreach](https://msdn.microsoft.com/en-us/library/ttw7t8t6.aspx)
 
 After creating the linked list class library, create a Console Application that demonstrates it with various data types.
