@@ -25,13 +25,12 @@ For example:
 ```csharp
 var list = new LinkedList<string>();
 list.Add("x");
-list.Add("a");
-list.Add("s");
+list.Add("m");
 list.Add("s");
 
-Console.WriteLine(list.Count); //output: 4
+Console.WriteLine(list.Count); //output: 3
 
-list.InsertAfter("x", "m");
+list.InsertAfter("m", "a");
 list.InsertAt(10, "z"); //throws an exception - IndexOutOfRangeException
 list.InsertAt(2, "z");
 list.Remove("z");
@@ -44,7 +43,6 @@ foreach(string value in list)
 //x
 //m
 //a
-//s
 //s
 ```
 
