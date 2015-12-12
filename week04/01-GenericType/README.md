@@ -33,6 +33,7 @@ The following methods that must be implemented in Dequeue<T> class :
 * Create an immutable class Combination{T, U} which accepts 6 values(int, bool, double, etc.).
 * Override Equals and GetHashCode methods in order to check if two combinations are identical
 * The group of first three values shares the same C# type (Valid for the second group of three values as well)
+* The LottoGame class should have a constructor with a parameter of type Combination{T, U} - the winning combination of the game
 * Ask the user to enter any number of combinations he wants
 * Validate if a combination is already entered
 * Create an AddUserCombination method in LottoGame class which adds another user combination to the game (all the combinations must be stored internally in LottoGame class) 
