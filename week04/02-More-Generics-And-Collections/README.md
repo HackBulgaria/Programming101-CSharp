@@ -49,23 +49,29 @@ foreach(string value in list)
 
 ## Dynamic Array
 
-Now lets implement[Dynamic Array data structure](https://en.wikipedia.org/wiki/Dynamic_array)
+Now lets implement [Dynamic Array data structure](https://en.wikipedia.org/wiki/Dynamic_array), also called Vector. It is an array that resizes itself as we add new elements (the .Net class List<> is a dynamic array).
+
 The dynamic array should contain a generic type.
-Dynamic array will use arrays instead of nodes to store information.
 
-The methods that the structure should be the same as Linked List:
+It will use an array instead of nodes to store information (Use a simple array and not the .Net class List<>)
 
-* `Add(T value)` - adds element to the end of the list
-* `InsertAfter(T key, T value)` - adds an element after the specified element key
-* `InsertBefore(T key, T value)` - adds an element before the specified element key
+For the class `DynamicArray<T>` implement the operations:
+
+* Default constructor and a constructor that takes 1 argument for the initial capacity (the size of the internal array)
+* Propert `Capacity` that returns the current capacity (the size of the internal array)
+* Property `Count` for the cumber of elements in the dynamic array
+* `Contains(T value)` - checks if a value is in the array
+* `IndexOf(T value)` - returns the index of the first occurence of the given value, -1 if the value is not in the array
+* `Add(T value)` - adds element to the end of the array
 * `InsertAt(int index, T value)` - adds an element at the specified index
 * `Remove(T value)` - deletes the first occurence of the specified element
 * `RemoveAt(int index)` - removes the element at the specified index
-* `Clear()` - clears the elements of the list
-* Property `Count` for the cumber of elements in the list
-* Indexer `T this[int]` - gets or sets the value of the n-th 
+* `Clear()` - clears the elements of the dynamic array
+* Indexer `T this[int]` - gets or sets the value of the n-th element
+* `T[] ToArray()` - copies the elements to a new simple array
 
-The rate of growgth of the dynamic array should be/ Or how much our internal array will grow if the cuurent is not enought to contain all the information/: 
+The rate of growth of the dynamic array /Or how much our internal array will grow if the current is not enough to contain all the information/ should be:
+* The array should start with a size of 10 if not set in the constructor.
 * the array should double if the curent size is under 2048.
 * If the size is above 2048 resize the array with capacity of 256.
 
