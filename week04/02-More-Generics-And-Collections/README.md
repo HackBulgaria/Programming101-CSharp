@@ -49,7 +49,7 @@ foreach(string value in list)
 
 ## Dynamic Array
 
-Now lets implement [Dynamic Array data structure](https://en.wikipedia.org/wiki/Dynamic_array), also called Vector. It is an array that resizes itself as we add new elements (the .Net class List<> is a dynamic array).
+Now lets implement [Dynamic Array data structure](https://en.wikipedia.org/wiki/Dynamic_array), also called Vector. It is an array that resizes itself as we add new elements (the .Net class List<> is a dynamic array). Create it in a new Class Library project named DynamicArray.
 
 The dynamic array should contain a generic type.
 
@@ -82,10 +82,11 @@ When removing elements if the capicity is 1/3 of the total capacity, make the ar
 Next implement the [map data structure](https://en.wikipedia.org/wiki/Associative_array). A map stores pair of keys and values like the .Net `Dictionary<T, U>` class. In a Class Library project named Map:
 
 * Create a class `Map<T, U>` - T will be the type of the keys, U the type of the values
-* In the class keep two collections - one for the keys and one for the values. Don't use the builting .Net types but one of the types you created above - 'LinkedList' or 'DynamicArray'
+* In the class keep two collections - one for the keys and one for the values. Don't use the builting .Net types but one of the types you created above - `LinkedList` or `DynamicArray`
 * Implement the following methods and properties for the Map:
  * Add(T key, U value)
- * Contains(T key) - checks if a value with the specified key is in the Map
+ * ContainsKey(T key) - checks if the specified key is in the Map
+ * ContainsValue(U value) - checks if the specified value is in the Map
  * Remove(T key)
  * Clear() - removes all elements
  * Indexer U this[T] - gets or sets the value with the specified key
