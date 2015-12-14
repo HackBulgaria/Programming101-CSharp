@@ -23,5 +23,5 @@ if(a != null)
 ## More builtin interfaces
 
 We already came across some of the builtin .Net interfaces (e.g. [IEnumerable and IEnumerator](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable%28v=vs.110%29.aspx) that give us the ability to iterate a collection with a foreach loop). There are many more useful builtin interfaces. This time we'll explore `IList` and `IComparer`
-* All .Net collections that can directly access their elements by index implement [IList\<T>](https://msdn.microsoft.com/en-us/library/5y536ey6%28v=vs.110%29.aspx). Such collections are `List\<T>` and the simple arrays `T[]`
+* All .Net collections that can directly access their elements by index implement [IList\<T>](https://msdn.microsoft.com/en-us/library/5y536ey6%28v=vs.110%29.aspx). Such collections are `List<T>` and the simple arrays `T[]`
 * [IComparer\<T>](https://msdn.microsoft.com/en-us/library/8ehhxeaf%28v=vs.110%29.aspx) is used by many .Net algorithms to define a way to compare two objects and check which one is greater. For example in a sorting algorithm we may want to sort a number sequence so that the even ones are before the odd ones. In this case we pass a custom object of type `IComparer` to the sort algorithm.
