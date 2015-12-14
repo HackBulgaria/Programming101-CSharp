@@ -11,7 +11,7 @@ Before we continue with more advanced OOP, we'll explore some more useful C# fea
 
 ## Nullable types
 
-[Nullable types](https://msdn.microsoft.com/en-us/library/1t3y8s4s.aspx) (also see [here](http://stackoverflow.com/questions/13238059/what-is-nullable-type-in-c)). As we know value types are stored in the application stack and always have a value. With nullable types we can assign make them behave like reference types and accept null values. All nullable types are represented by the struct [Nullable\<T>](https://msdn.microsoft.com/en-us/library/b3h38hb0%28v=vs.110%29.aspx)
+[Nullable types](https://msdn.microsoft.com/en-us/library/1t3y8s4s.aspx) (also see [here](http://stackoverflow.com/questions/13238059/what-is-nullable-type-in-c)). As we know value types are stored in the application stack and always have a value. With nullable types we can make them behave like reference types and accept null values. All nullable types are represented by the struct [Nullable\<T>](https://msdn.microsoft.com/en-us/library/b3h38hb0%28v=vs.110%29.aspx)
 ```csharp
 int? a = null;
 if(a != null)
