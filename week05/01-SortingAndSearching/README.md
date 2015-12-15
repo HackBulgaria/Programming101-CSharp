@@ -56,3 +56,7 @@ int index = sortedArray.BSearch(6, comparer);
 ```
 
 The method may also be called without an `IComparer<T>` parameter, in this case [Comparer\<T>.Default](https://msdn.microsoft.com/en-us/library/azhsac5f%28v=vs.110%29.aspx) should be used.
+
+## Bonus - Quicksort and Merge sort
+
+The bubble sort and selection sort algorithms are very inefficient. Much better sorting algorithms are [Quicksort](https://en.wikipedia.org/wiki/Quicksort) and [Merge sort](https://en.wikipedia.org/wiki/Merge_sort). Try to implement them as well.
