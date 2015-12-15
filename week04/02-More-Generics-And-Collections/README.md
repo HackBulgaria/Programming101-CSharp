@@ -93,4 +93,6 @@ Next implement the [map data structure](https://en.wikipedia.org/wiki/Associativ
     * if the element doesn't exist the getter should throw an error
     * if the element doesn't exist the setter should add it to the Map
 
+## Bonus - HashMap
 
+The implementation of the Map above is not optimal for storing key-value pairs. A much better implementation is the HashMap (or HashTable) data structure. In this implementation you'll need to use the `GetHashCode()` method of the keys. You can read more on HashMap [here](https://en.wikipedia.org/wiki/Hash_table)
