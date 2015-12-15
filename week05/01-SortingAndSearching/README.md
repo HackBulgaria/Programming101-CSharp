@@ -13,7 +13,7 @@ class MyIntComparer : IComparer<int>
 }
 
 int[] array = new int[]{2, 4, 1, 6, 10};
-int[] sortedArray = array.BubbleSort(new MyIntComparer());
+int[] sortedArray = (int[])array.BubbleSort(new MyIntComparer());
 ```
 
 The method may also be called without an `IComparer<T>` parameter, in this case [Comparer\<T>.Default](https://msdn.microsoft.com/en-us/library/azhsac5f%28v=vs.110%29.aspx) should be used.
@@ -50,7 +50,7 @@ class MyIntComparer : IComparer<int>
 MyIntComparer comparer = new MyIntComparer();
 
 int[] array = new int[]{2, 4, 1, 6, 10};
-int[] sortedArray = array.BubbleSort(comparer);
+int[] sortedArray = (int[])array.BubbleSort(comparer);
 
 int index = sortedArray.BSearch(6, comparer);
 ```
