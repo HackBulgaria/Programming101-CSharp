@@ -4,7 +4,7 @@ Today we'll add custom sorting and searching for arrays and Lists. For this purp
 
 ## Bubble Sort
 
-Create an extension method `BubbleSort()` that sorts the elements of an `IList<T>`. The method should accept an `IComparer<T>` parameter that will be used to compare the elements in the collection. It should not modify the array but return a new sorted copy. The mtehod should be called like this:
+Create an extension method `BubbleSort()` that sorts the elements of an `IList<T>`. The method should accept an `IComparer<T>` parameter that will be used to compare the elements in the collection. It should sort the collection and return the same instance. The mtehod should be called like this:
 
 ```csharp
 class MyIntComparer : IComparer<int>
