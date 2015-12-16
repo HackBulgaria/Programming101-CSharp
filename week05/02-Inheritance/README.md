@@ -41,7 +41,7 @@ You have to create a hierarchy of 2D shapes.
 
 Override ToString() method for all classes.
 
-Now create an interface `IMovable` with a method `Move(x, y)` that moves an object along th x and y axes. Implement it in `Point` and `Shape` and its subclasses.
+Now create an interface `IMovable` with a method `Move(x, y)` that moves an object along the x and y axes. Implement it in `Point` and `Shape` and its subclasses.
 
 ### Bonus - Display the shapes
 
