@@ -31,4 +31,20 @@ Some adults are boring, so add a property for them checking whether they are bor
 
 ## Shapes
 
-You have to create a hierarchy of 2D shapes
+You have to create a hierarchy of 2D shapes.
+
+* Create a class `Point` with 2 coordinates.
+* Create an abstract class `Shape` with methods `GetPerimeter()`, `GetArea()` (point is not a shape).
+* Create a class `Rectangle` with properties `Width`, `Height`, `Center`. Create an inherited class `Square` with a property `Side`. `Square` should make sure that its width and height are equal (whenever one of them changes the other one should also change).
+* Create a class `Ellipse` with properties `RadiusX`, `RadiusY` (the semi-axes `a` and `b` from [here](https://en.wikipedia.org/wiki/Ellipse#Elements_of_an_ellipse)), `Center`. Create an inherited class `Circle` with a property `Radius`. `Circle` should make sure that its semi-axes are equal (whenever one of them changes the other one should also change).
+* Create a class `Triangle` with properties `Vertex1`, `Vertex2`, `Vertex3`.
+
+Override ToString() method for all classes.
+
+Now create an interface `IMovable` with a method `Move(x, y)` that moves an object along th x and y axes. Implement it in `Point` and `Shape` and its subclasses.
+
+### Bonus - Display the shapes
+
+For the Shapes problem above create an interface `IDisplayable` with property `System.Drawing.Color Color{get;set;}` and method `void Draw(System.Drawing.Graphics g)` that describes the color of an object and draws it on a graphics object (see [System.Drawing.Color](https://msdn.microsoft.com/en-us/library/system.drawing.color%28v=vs.110%29.aspx) and [System.Drawing.Graphics](https://msdn.microsoft.com/en-us/library/system.drawing.graphics%28v=vs.110%29.aspx)). Implement the interface in `Shape` and its subclasses.
+
+Create a Windows Forms desktop application that draws shapes on a surface.
