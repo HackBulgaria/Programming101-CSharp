@@ -47,4 +47,6 @@ Now create an interface `IMovable` with a method `Move(x, y)` that moves an obje
 
 For the Shapes problem above create an interface `IDisplayable` with property `System.Drawing.Color Color{get;set;}` and method `void Draw(System.Drawing.Graphics g)` that describes the color of an object and draws it on a graphics object (see [System.Drawing.Color](https://msdn.microsoft.com/en-us/library/system.drawing.color%28v=vs.110%29.aspx) and [System.Drawing.Graphics](https://msdn.microsoft.com/en-us/library/system.drawing.graphics%28v=vs.110%29.aspx)). Implement the interface in `Shape` and its subclasses.
 
-Create a Windows Forms desktop application that draws shapes on a surface.
+Note: you may need to add a reference to the `System.Drawing` assembly to your project in order to use `System.Drawing.Color` and `System.Drawing.Graphics`. Also don't use `using System.Drawing;` in your class definitions because there are `Point` and `Rectangle` classes in the `System.Drawing` namespace as well.
+
+Create a Windows Forms desktop application that draws shapes on a surface. You can see an example application to get you started [here](https://github.com/HackBulgaria/Programming101-CSharp/tree/master/week05/02-Inheritance/Shapes)
