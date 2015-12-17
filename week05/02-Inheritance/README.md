@@ -21,7 +21,7 @@ Test the hierarchy by creating a list of animals `List<Animal> animals` and popu
 
 ## Person
 
-Create a class Person. Each person has a gender and does daily stuff. What children do daily is play, and adults go to work. Adults can have one or more children. Children can have several toys. Toys have a colour and size.
+Create a class Person. Each person has a gender and does daily stuff. What children do daily is play, and adults go to work. Adults can have children. Children can have toys. A toy has a colour and size.
 
 Override the ToString() method for each class. Should any of the classes be abstract?
 
