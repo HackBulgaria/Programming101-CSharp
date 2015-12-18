@@ -1,4 +1,4 @@
-# Dungeons and Lizards
+# Dungeons and Lizards (Draft version, still in progress)
 
 We are going to make a simple, 2D turn-based console game filled with dungeons and lizards!
 
