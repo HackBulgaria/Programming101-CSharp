@@ -138,7 +138,7 @@ var w = new Weapon("The Axe of Destiny", 20); // damage=20
 
 h.equip(w);
 
-if(h.attack(weapon) == 20){
+if(h.attack(w) == 20){
 // bla bla
 }
 ```
