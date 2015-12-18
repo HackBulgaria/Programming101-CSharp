@@ -11,7 +11,7 @@ So lets start with the basic stuff:
 Make a `Hero` class which can be initialized by that (all constructor arguments are shown in the example):
 
 ```CSharp
-var hero = new Hero("Bron", "Dragonslayer", 100, 100, 2)
+var hero = new Hero("Bron", "Dragonslayer", 100, 100, 2);
 ```
 
 Our hero should have the following methods:
