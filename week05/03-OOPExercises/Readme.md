@@ -342,7 +342,7 @@ The fight follows this algorithm:
 
 ## Creativity and Improvisation
 
-As you can see, this is a big and a fat problem. There are things that are not well defined.
+As you can see, this is a big and a fat problem. There are things that are not well defined. Try to split the solution into to projects - logic, where the behavior of our game will be located and a console application, where the logic for displaying our information will be.
 
 **This is up to you. Make an interesting game!**
 
