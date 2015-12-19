@@ -1,4 +1,4 @@
-# Dungeons and Lizards (Draft version, still in progress)
+# Dungeons and Lizards
 
 We are going to make a simple, 2D turn-based console game filled with dungeons and lizards!
 
@@ -147,14 +147,14 @@ if(h.attack(w) == 20){
 
 This should be more complex. Implement a spell class, which behaves like that:
 
-```python
-s = Spell(name="Fireball", damage=30, mana_cost=50, cast_range=2)
+```CSharp
+var s = Spell("Fireball", 30, 50, 2) // name, damage, manaCost, castRange
 ```
 
 `name` and `damage` are self explanatory.
 
-* `mana_cost` means that the spell needs at least that much amount of mana in order to be casted. Raise an error if you cannot cast that spell.
-* `cast_range` is a bit more special and related to the Dungeon. You can cast that spell on an enemy, which is within the `cast_range`. If `cast_range` is 1, you can attack enemies, that are next to you. If cast range is greater than 1, you can attack enemies from distance, that is `cast_range` squares away. **Casting range is only calculated in a straight line. You cannot curve spells**
+* `manaCost` means that the spell needs at least that much amount of mana in order to be casted. Raise an error if you cannot cast that spell.
+* `castRange` is a bit more special and related to the Dungeon. You can cast that spell on an enemy, which is within the `castRange`. If `castRange` is 1, you can attack enemies, that are next to you. If cast range is greater than 1, you can attack enemies from distance, that is `castRange` squares away. **Casting range is only calculated in a straight line. You cannot curve spells**
 
 ## The Dungeons and treasures
 
@@ -183,29 +183,17 @@ We are going to load the layout of our map from a file. For example, the map abo
 
 We create new dungeon like this:
 
-```python
->>> from dungeon import Dungeon
->>> map = Dungeon("level1.txt")
->>> map.print_map()
-
-S.##.....T
-#T##..###.
-#.###E###E
-#.E...###.
-###T#####G
-```
-
 Our `Dungeon` should have the following methods:
 
-### `print_map()`
+### `printMap()`
 
 This should print the map to the console. Check the example above.
 
-### `spawn`
+### `Spawn`
 
 We want to spawn our hero in the `S` location of the map.
 
-Implement a method, called `spawn(hero)` where:
+Implement a method, called `Spawn(Hero hero)` where:
 
 * `hero` is a `Hero` instance
 
@@ -220,9 +208,9 @@ If the spawning is successful - return True. Otherwise (If there are no more spa
 
 So, if we have the map above, let's take the following example:
 
-```python
->>> map.spawn(some_hero_instance)
->>> map.print_map()
+```CSharp
+map.Spawn(some_hero_instance)
+map.PrintMap()
 H.##.....T
 #T##..###.
 #.###E###E
@@ -230,11 +218,11 @@ H.##.....T
 ###T#####G
 ```
 
-### `move_hero()`
+### `MoveHero()`
 
-Now, implemented a method `move_hero(direction)` where:
+Now, implemented a method `MoveHero(Direction direction)` where:
 
-* `direction` is either `"up"`, `"down"`, `"left"` and `"right"`
+* `Direction` is an enum with either `"Up"`, `"Down"`, `"Left"` and `"Right"`
 
 This should move our hero in the desired direction.
 
@@ -243,19 +231,17 @@ Return `True` if he can move into that `direction` or `Fasle` otherwise.
 __For example:__
 
 ```
->>> map.move_hero("right")
-True
->>> map.print_map()
+map.move_hero(Direction.Right) //True
+map.PrintMap()
 .H##.....T
 #T##..###.
 #.###E###E
 #.E...###.
 ###T#####G
->>> map.move_hero("up")
-False
->>> map.move_hero("down")
-Found treasure!
->>> map.print_map()
+map.moveHero(Direction.Up) \\False
+map.moveHero(Direction.Down) \\Found treasure!
+map.printMap()
+
 ..##.....T
 #H##..###.
 #.###E###E
@@ -276,7 +262,7 @@ It is a good idea to have a finite list of treasures that can be found in a give
 
 One idea is to keep a list of treasure in the **txt** file, where the map is. Other idea is to have a separate file that keeps the loot for each map.
 
-Our suggestion for you is to keep a track of all treasures in the `Dungeon` class and have a method `pick_treasure()` that returns an instance of randomly picked treasure.
+Our suggestion for you is to keep a track of all treasures in the `Dungeon` class and have a method `PickTreasure()` that returns an instance of randomly picked treasure.
 
 ## Fights
 
@@ -284,13 +270,13 @@ The interesting part is here.
 
 Our hero must fight his enemies in order to reach the exit of the dungeon.
 
-Our `Dungeon` should have a `hero_attack(by)` method, which checks if our hero can attack either by weapon or by spell, again having a `by` keyword-argument, like the `Weapon`
+Our `Dungeon` should have a `heroAttack(by)` method, which checks if our hero can attack either by weapon or by spell, again having a `by` keyword-argument, like the `Weapon`
 
 
 A fight happens when:
 
 * Our hero walks into the same position as the enemy - then the fights start automatically
-* Our hero is within some range of the enemy and triggers `hero_attack` method call. Then we can attack our enemy, but our enemy must walk to our place in order to start attacking us. This is really helpful with spells!
+* Our hero is within some range of the enemy and triggers `heroAttack` method call. Then we can attack our enemy, but our enemy must walk to our place in order to start attacking us. This is really helpful with spells!
 
 Implement a `Fight` class that takes a hero and an emeny and simulates a fight between them.
 
@@ -298,41 +284,38 @@ The `Fight` is over when either our hero or the enemy is dead.
 
 Here is a full example:
 
-```python
->>> h = Hero(name="Bron", title="Dragonslayer", health=100, mana=100, mana_regeneration_rate=2)
->>> w = Weapon(name="The Axe of Destiny", damage=20)
->>> h.equip(w)
->>> s = Spell(name="Fireball", damage=30, mana_cost=50, cast_range=2)
->>> h.learn(s)
->>> map = Dungeon("level1.txt")
->>> map.spawn(h)
->>> map.print_map()
+```CSharp
+var h = Hero("Bron", "Dragonslayer", 100, 100, 2) \\name="Bron", title="Dragonslayer", health=100, mana=100, mana_regeneration_rate=2
+var w = Weapon("The Axe of Destiny", 20) \\ name="The Axe of Destiny", damage=20
+h.Equip(w)
+var s = Spell("Fireball", 30, 50, 2)
+h.Learn(s)
+map = Dungeon("level1.txt")
+map.Spawn(h)
+map.printMap()
 H.##.....T
 #T##..###.
 #.###E###E
 #.E...###.
 ###T#####G
->>> map.move_hero("right")
-True
->>> map.move_hero("down")
-Found health potion. Hero health is max.
->>> map.print_map()
+map.moveHero(Direction.Right) \\True
+map.moveHero(Direction.Down) \\ in console: Found health potion. Hero health is max.
+>>> map.PrintMap()
 ..##.....T
 #H##..###.
 #.###E###E
 #.E...###.
 ###T#####G
->>> map.hero_attack(by="spell")
-Nothing in casting range 2
->>> map.move_hero("down")
->>> map.move_hero("down")
->>> map.print_map()
+map.heroAttack(by="spell") \\ Nothing in casting range 2
+map.moveHero(Direction.Down)
+map.moveHero(Direction.Down)
+map.printMap()
 ..##.....T
 #.##..###.
 #.###E###E
 #HE...###.
 ###T#####G
->>> map.hero_attack(by="spell")
+map.heroAttack(by="spell")
 A fight is started between our Hero(health=100, mana=100) and Enemey(health=100, mana=100, damage=20)
 Hero casts a Fireball, hits enemy for 20 dmg. Enemy health is 80
 Enemy moves one square to the left in order to get to the hero. This is his move.
