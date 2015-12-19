@@ -151,10 +151,10 @@ This should be more complex. Implement a spell class, which behaves like that:
 var s = Spell("Fireball", 30, 50, 2) // name, damage, manaCost, castRange
 ```
 
-`name` and `damage` are self explanatory.
+`Name` and `Damage` are self explanatory.
 
-* `manaCost` means that the spell needs at least that much amount of mana in order to be casted. Raise an error if you cannot cast that spell.
-* `castRange` is a bit more special and related to the Dungeon. You can cast that spell on an enemy, which is within the `castRange`. If `castRange` is 1, you can attack enemies, that are next to you. If cast range is greater than 1, you can attack enemies from distance, that is `castRange` squares away. **Casting range is only calculated in a straight line. You cannot curve spells**
+* `ManaCost` means that the spell needs at least that much amount of mana in order to be casted. Raise an error if you cannot cast that spell.
+* `CastRange` is a bit more special and related to the Dungeon. You can cast that spell on an enemy, which is within the `CastRange`. If `CastRange` is 1, you can attack enemies, that are next to you. If cast range is greater than 1, you can attack enemies from distance, that is `CastRange` squares away. **Casting range is only calculated in a straight line. You cannot curve spells**
 
 ## The Dungeons and treasures
 
@@ -185,7 +185,7 @@ We create new dungeon like this:
 
 Our `Dungeon` should have the following methods:
 
-### `printMap()`
+### `PrintMap()`
 
 This should print the map to the console. Check the example above.
 
