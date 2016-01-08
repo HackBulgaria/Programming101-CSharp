@@ -12,4 +12,5 @@ Last time we talked about unit tests, here are some materials to refresh your me
 ## Delegates and Events
 
 * [Delegates and Events](https://msdn.microsoft.com/en-us/library/orm-9780596521066-01-17.aspx)
-* [Delegates and Events 2 part](http://csharpindepth.com/Articles/Chapter2/Events.aspx)
+* [Delegates and Events part 2](http://csharpindepth.com/Articles/Chapter2/Events.aspx)
+* [Delegates and Events part 3](http://www.c-sharpcorner.com/UploadFile/84c85b/delegates-and-events-C-Sharp-net/)
