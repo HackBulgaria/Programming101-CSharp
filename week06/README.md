@@ -21,4 +21,9 @@ Last time we talked about unit tests, here are some materials to refresh your me
 * [Static Classes and members](https://msdn.microsoft.com/en-us/library/79b3xss3.aspx)
 * [Static Constructors](https://msdn.microsoft.com/en-us/library/k9x6w0hc.aspx)
 
+## Anonymous Types and Nested Classes
+
+* [Anonymous Types](https://msdn.microsoft.com/en-us/library/bb397696.aspx)
+* [Nested Classes](https://msdn.microsoft.com/en-us/library/ms173120.aspx)
+
 
