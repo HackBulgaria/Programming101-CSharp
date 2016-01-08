@@ -8,3 +8,7 @@ This week we will be talking about exceptions. Here are some materials:
 Last time we talked about unit tests, here are some materials to refresh your memory:
 * [Creating unit tests - MDN](https://msdn.microsoft.com/en-us/library/ms182532.aspx)
 * [Introduction to TDD](http://www.agiledata.org/essays/tdd.html)
+
+## Delegates
+
+* [Delegates and Events](https://msdn.microsoft.com/en-us/library/orm-9780596521066-01-17.aspx)
