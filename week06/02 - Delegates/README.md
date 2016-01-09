@@ -9,6 +9,8 @@ filter or not. Return the filtered collection.
 Optional: make the method and the delegate generic so that they
 can work with collections of any type (not just integers)
 
+Optional: implement this as an extension method.
+
 `List<int> FilterCollection(List<int> original, FilterDelegate filter)`
 
 ## Aggregates
@@ -22,6 +24,8 @@ Average, Max, Min). Return the result of the aggregation.
 
 Optional: make the method and the delegate generic so that they
 can work with collections of any type (not just integers)
+
+Optional: implement this as an extension method.
 
 ## Bubble sort with a predicate
 
