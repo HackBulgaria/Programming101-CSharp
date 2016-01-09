@@ -18,7 +18,7 @@ and an aggregate method which defines a way to aggregate all the
 integers into a single integer (possible aggregates are Sum, Product,
 Average, Max, Min). Return the result of the aggregation.
 
-`int AggregateCollection(List<int> original, AggregationDelegate aggregate)`
+`decimal AggregateCollection(List<int> original, AggregationDelegate aggregate)`
 
 Optional: make the method and the delegate generic so that they
 can work with collections of any type (not just integers)
