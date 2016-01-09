@@ -34,6 +34,18 @@ For example, `bool f(int x)` is a predicate on x.
 
 # Events
 
+## AverageAggregator
+
+Create a class called AverageAggregator which can dynamically aggregate
+numbers and retrieve their average. The class should have the following
+members:
+
+* read-only property decimal Average - returning the average of the currently added numbers
+* a method void AddNumber(int number) - adds a new number and updates the average
+
+Add an event to this class AverageChanged which fires only when the value of the Average
+property has changed.
+ 
 ## INotifyPropertyChanged
 
 Create a class of your choice with a few (3-5) properties. Implement
