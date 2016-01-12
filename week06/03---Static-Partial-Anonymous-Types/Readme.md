@@ -39,9 +39,19 @@ Step 3 : Get the corresponding unicode character to the calculated number : 88 =
 
 # Anonymous Types and Nested classes
 
-## Printing all avaialable colors
+## Sorting Books and Magazines
 
-Still in progress..
+Create two classes 
+- Book with properties Name (string), Id (int).
+- Magazine with properties Title(string), ISBN (int)
+- Create a static class MagazineAndBookSorter which contains a public static method called Sort
+
+`public static List<string> Sort(List<Book> books, List<Magazine> magazines)`
+
+It should sort all magazines and books based on Name/Title and Id/ISBN.
+This method should sort merge both collection into a single list of string containing the sorted Name/Title.
+
+- Use nested classed called Edition which should contain two properties EditionName(string) and Order(int) and which should be used for the sorting operation
 
 
 # Partial Classes and Methods
