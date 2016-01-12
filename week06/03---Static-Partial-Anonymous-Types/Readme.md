@@ -54,10 +54,10 @@ Step 3 : Get the corresponding unicode character to the calculated number : 88 =
 - Position (string)
 - Bonus (decimal)
 
-and a definition of method Print() without implementation
+and a definition of partial method Print() without implementation
 
 The second file should contain all methods including :
 
-- void Print() which should print first name together with last name
+- void Print() - partial method which should print first name together with last name
 - CalculateAllIncome() => Salary + Bonus
 - CalculateBalance() => Salary + Bonus - Taxes
