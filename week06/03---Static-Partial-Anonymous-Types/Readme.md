@@ -10,9 +10,9 @@
 
 `List<T> UnionAll(List<T> firstList, List<T> secondList)`
 
-- Write a static method Union which takes as arguments two lists and implements an union between over them
+- Write a static method Union which takes as arguments two lists and implements an union between over them (without duplicating items)
 
-`List<T> UnionAll(List<T> firstList, List<T> secondList)`
+`List<T> Union(List<T> firstList, List<T> secondList)`
 
 - Write a static method Join which takes as argument a list of string values.
 It should join all string values with a specific character which is predifined in another class.
