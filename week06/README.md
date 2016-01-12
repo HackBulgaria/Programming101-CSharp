@@ -26,4 +26,6 @@ Last time we talked about unit tests, here are some materials to refresh your me
 * [Anonymous Types](https://msdn.microsoft.com/en-us/library/bb397696.aspx)
 * [Nested Classes](https://msdn.microsoft.com/en-us/library/ms173120.aspx)
 
+## Partial Classes
 
+* [Partial Classes](https://msdn.microsoft.com/en-us/library/wa80x488.aspx)
