@@ -40,7 +40,7 @@ Step 3 : Get the corresponding unicode character to the calculated number : 88 =
 
 # Partial Classes and Methods
 
-- Implement class employee which has definition in two files:
+- Implement class Employee which has definition in two files:
 
 `public partial class Employee`
 
