@@ -49,7 +49,8 @@ Create two classes
 `public static List<string> Sort(List<Book> books, List<Magazine> magazines)`
 
 It should sort all magazines and books based on Name/Title and Id/ISBN.
-This method should sort merge both collection into a single list of string containing the sorted Name/Title.
+This method should  merge both collection into a single list of string containing the Name/Title.
+The list should be sorted according to Name/Title and then on Id/ISBN
 
 - Use nested classed called Edition which should contain two properties EditionName(string) and Order(int) and which should be used for the sorting operation
 
