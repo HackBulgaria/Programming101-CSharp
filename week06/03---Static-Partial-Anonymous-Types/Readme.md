@@ -35,3 +35,4 @@ Step 3 : Get the corresponding unicode character to the calculated number : 88 =
 
 - Convert method Intersect to extension method
 
+**Note the type T must implements IComparable
