@@ -40,11 +40,13 @@ Step 3 : Get the corresponding unicode character to the calculated number : 88 =
 
 # Partial Classes and Methods
 
+## Implement partial class Employee
+
 - Implement class Employee which has definition in two files:
 
 `public partial class Employee`
 
-The first file should contain all properties including :
+- The first file should contain all properties including :
 
 - FirstName (string)
 - LastName (string)
