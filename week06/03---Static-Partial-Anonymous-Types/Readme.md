@@ -36,3 +36,26 @@ Step 3 : Get the corresponding unicode character to the calculated number : 88 =
 - Convert method Intersect to extension method
 
 **Note the type T must implement IComparable
+
+
+# Partial Classes and Methods
+
+- Implement class employee which has definition in two files:
+
+`public partial class Employee`
+
+The first file should contain all properties including :
+
+- FirstName (string)
+- LastName (string)
+- Salary (decimal)
+- Position (string)
+- Bonus (decimal)
+
+and a definition of method Print() without implementation
+
+The second file should contain all methods including :
+
+- void Print() which should print first name together with last name
+- CalculateAllIncome() => Salary + Bonus
+- CalculateBalance() => Salary + Bonus - Taxes
