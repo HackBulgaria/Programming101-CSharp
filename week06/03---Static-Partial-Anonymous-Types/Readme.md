@@ -27,11 +27,11 @@ The character must be kept in a private static member :
 `public char GetReplacingValue();`
 
 The method GetReplacingValue should use current date and time in order to calculate the replacing character.
-Current time :  19.06.2015 17:35:50
-Step 1 : 19.06.2015 17:35:50 => 1 + 9 + 0 + 6 + 2 + 0 + 1 + 5 + 1 + 7 + 3 + 5 + 5 + 0= 48 // sum all digits
-Step 2 : 48 % 25 = 23 // calculate number mod 25
-Step 3 : 65 + 23 // adds 65 to the number
-Step 3 : Get the corresponding unicode character to the calculated number : 88 => return 'X'
+- Current time :  19.06.2015 17:35:50
+- Step 1 : 19.06.2015 17:35:50 => 1 + 9 + 0 + 6 + 2 + 0 + 1 + 5 + 1 + 7 + 3 + 5 + 5 + 0= 48 // sum all digits
+- Step 2 : 48 % 25 = 23 // calculate number mod 25
+- Step 3 : 65 + 23 // adds 65 to the number
+- Step 3 : Get the corresponding unicode character to the calculated number : 88 => return 'X'
 
 - Convert method Intersect to extension method
 
