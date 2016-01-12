@@ -29,4 +29,4 @@ Last time we talked about unit tests, here are some materials to refresh your me
 ## Partial Classes and Methods
 
 * [Partial Classes](https://msdn.microsoft.com/en-us/library/wa80x488.aspx)
-* [Partial Methods] https://msdn.microsoft.com/library/6b0scde8(v=vs.110).aspx
+* [Partial Methods](https://msdn.microsoft.com/library/6b0scde8(v=vs.110).aspx)
