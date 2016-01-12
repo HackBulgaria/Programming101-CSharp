@@ -37,6 +37,12 @@ Step 3 : Get the corresponding unicode character to the calculated number : 88 =
 
 **Note the type T must implement IComparable
 
+# Anonymous Types and Nested classes
+
+## Printing all avaialable colors
+
+Still in progress..
+
 
 # Partial Classes and Methods
 
