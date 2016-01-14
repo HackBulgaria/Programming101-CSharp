@@ -12,19 +12,19 @@ Rewrite NotifyCollection problem by using lambda expressions
 
 Create several classes :
 class Product with the following properties:
-Name : string,
-ProductId : int,
-CategoryId : int
+`Name : string,`
+`ProductId : int,`
+`CategoryId : int`
 
 class Order with the following properties:
-OrderId : int,
-Products : List<int>,
-OrderDate : DateTime,
-Name : string
+`OrderId : int,`
+`Products : List<int>,`
+`OrderDate : DateTime,`
+`Name : string`
 
 class Category with the following properties :
-CategoryId : int,
-CategoryName : string
+`CategoryId : int`,
+`CategoryName : string`
 
 Implement following three methods :
 * GetProducts() : returns a list with all products, ProductIds should be between 1 and 100
