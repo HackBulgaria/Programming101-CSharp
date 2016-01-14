@@ -5,7 +5,7 @@
 * [Object and Collection Initializers](https://msdn.microsoft.com/en-us/library/bb384062.aspx)
 * [Lambda Expressions](https://msdn.microsoft.com/en-us/library/bb397687.aspx)
 * [Anonymous Types (C# Programming Guide)](https://msdn.microsoft.com/en-us/library/bb397696.aspx)
-* [Lambda Expressions](https://msdn.microsoft.com/en-us/library/bb397675.aspx)
+* [Lambda Expressions with LINQ queries](https://msdn.microsoft.com/en-us/library/bb397675.aspx)
 
 ##Linq:
 * [Extension Methods](https://msdn.microsoft.com/en-us//library/bb383977.aspx)
