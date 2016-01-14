@@ -42,9 +42,14 @@ The print order names.
 Order the result based on CategoryName
 The result must be printed to the console.
 * Create linq query which returns all categories together with their products
+
 Create class CategoryWithProduct which should keep the result
 the class CategoryWithProduct must conrtain the following properties :
 CategoryName : string,
 ProductNames : List<string>,
 CategoryId : int
 
+* Create linq query which selects all orders together with their products and then print it to the screen.
+
+Together with every product print its category name
+Sort the result by orderDate.
