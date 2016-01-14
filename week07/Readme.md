@@ -11,4 +11,5 @@
 * [LINQ MSDN](https://msdn.microsoft.com/en-us/library/bb397926.aspx)
 * [Introduction to LINQ](https://msdn.microsoft.com/en-us/library/bb397897.aspx)
 * [101 samples in LINQ](https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b)
+* [Query syntax vs Method syntax](https://msdn.microsoft.com/en-us/library/bb397947.aspx)
 
