@@ -32,6 +32,6 @@ Implement following three methods :
 
 * Create linq query which returns all products with ids between 15 and 30
 * Create linq query which returns all categories with ids between 105 and 125
-* Create linq query which returns first 15 orders sorted by order name
+Create linq query which returns first 15 orders sorted by order name
 
 
