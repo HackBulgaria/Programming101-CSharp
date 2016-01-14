@@ -49,7 +49,8 @@ CategoryName : string,
 ProductNames : List<string>,
 CategoryId : int
 
+
 * Create linq query which selects all orders together with their products and then print it to the screen.
 
-Together with every product print its category name
+For every product print its category name as well.
 Sort the result by orderDate.
