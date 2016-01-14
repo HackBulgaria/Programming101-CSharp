@@ -1,5 +1,6 @@
 
 ## Linq Prerequisites:
+* [Anonymous Methods](https://msdn.microsoft.com/en-us/library/0yw3tz5k.aspx)
 * [Implicitly Typed Local Variables](https://msdn.microsoft.com/en-us/library/bb384061.aspx)
 * [Object and Collection Initializers](https://msdn.microsoft.com/en-us/library/bb384062.aspx)
 * [Lambda Expressions](https://msdn.microsoft.com/en-us/library/bb397687.aspx)
