@@ -26,12 +26,12 @@ class Category with the following properties :
 `CategoryId : int`,
 `CategoryName : string`
 
-Implement following three methods :
+Implement class DataStore which has the following three static methods :
 * GetProducts() : returns a list with all products, ProductIds should be between 1 and 100
 * GetCategories() : returns a list with all categories, CategoriesIds should be between 101 and 200
 * GetOrders() : returns a list with all orders, OrderIds should be between 201 and 300
 
-Write following queries
+Write following queries in your Main method
 * Create linq query which returns all products with ids between 15 and 30
 * Create linq query which returns all categories with ids between 105 and 125
 * Create linq query which returns first 15 orders sorted by order name
