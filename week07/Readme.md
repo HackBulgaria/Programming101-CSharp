@@ -15,3 +15,9 @@
 * [101 samples in LINQ](https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b)
 * [Query syntax vs Method syntax](https://msdn.microsoft.com/en-us/library/bb397947.aspx)
 
+## SQL 
+[SQL Server Express 2014](https://www.microsoft.com/en-us/download/details.aspx?id=42299)
+[SELECTS](https://msdn.microsoft.com/en-us/library/ms189499.aspx)
+[UPDATE](https://msdn.microsoft.com/en-us/library/ms177523.aspx)
+[DELETE](https://msdn.microsoft.com/en-us/library/ms189835.aspx)
+[CREATE](https://msdn.microsoft.com/en-us/library/ms174979.aspx)
