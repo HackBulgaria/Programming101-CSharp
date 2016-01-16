@@ -24,5 +24,17 @@ After each update, issue a select statement to verify your changes.
 7.All "Programmer" titles are now promoted to "Programmer II".
 
 
-For every product print its category name as well.
-Sort the result by orderDate.
+Some more selections:
+1. Show OrdeQty, the Name and the ListPrice of the order made by CustomerID 635
+2. Show all the addresses listed for 'Modular Cycle Systems'
+3. A "Single Item Order" is a customer order where only one item is ordered. Show the SalesOrderID and the UnitPrice for every Single Item Order.
+4. Where did the racing socks go? List the product name and the CompanyName for all Customers who ordered ProductModel 'Racing Socks'.
+5. Show the product description for culture 'fr' for product with ProductID 736
+6. Use the SubTotal value in SaleOrderHeader to list orders from the largest to the smallest. For each order show the CompanyName and the SubTotal and the total weight of the order.
+7. How many products in ProductCategory 'Cranksets' have been sold to an address in 'London'?
+8. For every customer with a 'Main Office' in Dallas show AddressLine1 of the 'Main Office' and AddressLine1 of the 'Shipping' address - if there is no shipping address leave it blank. Use one row per customer.
+9. For each order show the SalesOrderID and SubTotal calculated three ways:
+A) From the SalesOrderHeader 
+B) Sum of OrderQty*UnitPrice 
+C) Sum of OrderQty*ListPrice
+10. Show the best selling item by value.
