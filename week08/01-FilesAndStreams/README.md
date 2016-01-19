@@ -62,7 +62,7 @@ Create an interface `IAuthorSerializer` with two methods for serializing and des
 Implement `IAuthorSerializer` using the builtin .Net serialization functionality
 
 ### Custom serialization and deserialization
-Implement `IAuthorSerializer` using custom serialization:
+Implement `IAuthorSerializer` using custom serialization to a text file:
 * On the first line write the name of the author
 * On the second line write the author's email
 * On each consecutive line write information about each book - the title and the publishing date delimited by `$`
