@@ -42,7 +42,7 @@ So, here you are given a text file with a Windows-1251 encoding. Your task is to
 The subtitle you need to fix are here: http://subsunacs.net/get.php?id=41854
 
 In summary:
-- Create a utility method `fixEncoding(Path path)`
+- Create a utility method `FixEncoding(Path path)`
 - Backup the subtitles file so you don't have to download it again if you fail to write it.
 - The text in the file given is encoded using a **windows-1251** scheme. 
 - Conver it to UTF-8.
