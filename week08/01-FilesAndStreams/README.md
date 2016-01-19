@@ -54,7 +54,7 @@ Create a class `Book` with properties `Title` (string) and `PublishDate` (DateTi
 
 Create a class `Author` with properties `Name` (string), `Email` (string), `Books` (a list of books).
 
-Make the classes serializable. Only the Author's email shouldn't be serializable.
+Make the classes serializable.
 
 Create an interface `IAuthorSerializer` with two methods for serializing and deserializing an object of type Author to a given file.
 
@@ -64,4 +64,5 @@ Implement `IAuthorSerializer` using the builtin .Net serialization functionality
 ### Custom serialization and deserialization
 Implement `IAuthorSerializer` using custom serialization:
 * On the first line write the name of the author
+* On the second line write the author's email
 * On each consecutive line write information about each book - the title and the publishing date delimited by `$`
