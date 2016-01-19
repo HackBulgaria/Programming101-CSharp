@@ -46,16 +46,15 @@ using (StreamReader sr = new StreamReader("CDriveDirs.txt"))
 public class Person
 {
   public string Name {get; set;}
-  [NonSerializable]
-  public string Password {get; set;}
+  public string Company {get; set;}
   public int Age {get; set;}
 }
 
 var person = new Person()
   {
     Name = "Pesho",
-    Password = "TopSecret",
-    Age = "20"
+    Company = "Microsoft",
+    Age = 20
   };
 
 //Binary serialization and deserialization
@@ -80,6 +79,6 @@ using(StreamWriter myWriter = new StreamWriter("myFileName.xml"))
 
 using(FileStream myFileStream = new FileStream("myFileName.xml", FileMode.Open))
 {
-  Person p = (Person)mySerializer.Deserialize(myFileStream)
+  Person p = (Person)mySerializer.Deserialize(myFileStream);
 }
 ```
