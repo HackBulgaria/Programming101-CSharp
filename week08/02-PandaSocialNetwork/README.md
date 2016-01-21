@@ -3,6 +3,7 @@
 
 ## Syncrhonizing forks
 https://help.github.com/articles/syncing-a-fork/
+
 [how to store a graph - interesting topic](http://stackoverflow.com/questions/3287003/three-ways-to-store-a-graph-in-memory-advantages-and-disadvantages) + [and a little wiki](https://en.wikipedia.org/wiki/Graph_%28abstract_data_type%29#Representations)
 This is the next big thing. We promise!
 
