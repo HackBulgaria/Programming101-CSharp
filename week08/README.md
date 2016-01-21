@@ -64,19 +64,14 @@ using(Stream stream = new FileStream("MyFile.bin", FileMode.Create, FileAccess.W
   formatter.Serialize(stream, person);
 }
 
-using(Stream stream = new FileStream("MyFile.bin", FileMode.Open, FileAccess.Read, FileShare.Read))
-{
-  Person p = (Person)formatter.Deserialize(stream);
-}
-
 //XML serialization and deserialization
 XmlSerializer mySerializer = new XmlSerializer(typeof(Person));
 
 using(StreamWriter myWriter = new StreamWriter("myFileName.xml"))
 {
-  mySerializer.Serialize(myWriter, person);
+  mySeriassssqsqs;
 }
-
+sqqsw
 using(FileStream myFileStream = new FileStream("myFileName.xml", FileMode.Open))
 {
   Person p = (Person)mySerializer.Deserialize(myFileStream);
