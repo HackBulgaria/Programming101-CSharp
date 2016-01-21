@@ -2,7 +2,18 @@
 
 This is the next big thing. We promise!
 
-**Note:** In this exercise you should create unit tests for the different modules and classes.
+* **Tip for working on the assignment: don't start coding immediately! First get together and discuss and clear out the design of the application:**
+  * Read the whole assignment first
+  * Define the different modules, write diagrams on paper
+  * Define the different Visual Studio projects you'll need in the solution
+  * Define the needed classses and interfaces between them (how they communicate with each other)
+  * Distribute tasks between each other so that your code won't conflict much (so you don't have to merge a lot later)
+    * Think of implementing the tasks in such a way that you will need as few merging as possible later - merging sometimes can become a nightmare
+    * First you may create and commit the Visual Studio solution and the empty projects before each of you starts working on their part
+
+## Unit Tests
+
+In this exercise you should create unit tests for the different modules and classes.
 
 ## Panda
 
