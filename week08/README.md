@@ -1,6 +1,6 @@
 # I/O - Working with Files and Streams
 
-## Working with Files and Directories
+## Workingg with Files and Directories
 * [File and Stream I/0](https://msdn.microsoft.com/en-us/library/k3352a4t%28v=vs.110%29.aspx)
   * Classes for working with files and directories - `File`, `FileInfo`, `Directory`, `DirectoryInfo`, `Path`
 
