@@ -82,3 +82,8 @@ using(FileStream myFileStream = new FileStream("myFileName.xml", FileMode.Open))
   Person p = (Person)mySerializer.Deserialize(myFileStream);
 }
 ```
+
+# Traversing Graphs
+
+* [Breadth-first search algorithm (BFS)](https://en.wikipedia.org/wiki/Breadth-first_search)
+* [Depth-first search algorithm (DFS)](https://en.wikipedia.org/wiki/Depth-first_search)
