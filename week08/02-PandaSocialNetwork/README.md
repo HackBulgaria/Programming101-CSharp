@@ -3,7 +3,7 @@
 
 ## Syncrhonizing forks
 https://help.github.com/articles/syncing-a-fork/
-
+[how to store a graph - interesting topic](http://stackoverflow.com/questions/3287003/three-ways-to-store-a-graph-in-memory-advantages-and-disadvantages)
 This is the next big thing. We promise!
 
 * **Tip for working on the assignment: don't start coding immediately! First get together and discuss and clear out the design of the application:**
