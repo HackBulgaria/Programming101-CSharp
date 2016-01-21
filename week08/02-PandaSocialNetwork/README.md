@@ -9,7 +9,7 @@ This is the next big thing. We promise!
   * Define the needed classses and interfaces between them (how they communicate with each other)
   * Distribute tasks between each other so that your code won't conflict much (so you don't have to merge a lot later)
     * Think of implementing the tasks in such a way that you will need as few merging as possible later - merging sometimes can become a nightmare
-    * First you may create and commit the Visual Studio solution and the empty projects before each of you starts working on their part
+    * First you may create and commit the Visual Studio solution and the empty projects before each of you starts working
 
 ## Unit Tests
 
