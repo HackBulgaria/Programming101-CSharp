@@ -5,7 +5,8 @@
 https://help.github.com/articles/syncing-a-fork/
 
 [how to store a graph - interesting topic](http://stackoverflow.com/questions/3287003/three-ways-to-store-a-graph-in-memory-advantages-and-disadvantages) + [and a little wiki](https://en.wikipedia.org/wiki/Graph_%28abstract_data_type%29#Representations)
-This is the next big thing. We promise!
+
+## Tips
 
 * **Tip for working on the assignment: don't start coding immediately! First get together and discuss and clear out the design of the application:**
   * Read the whole assignment first
