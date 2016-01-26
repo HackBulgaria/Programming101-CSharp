@@ -64,8 +64,26 @@ Inside each category insert at least 3 products
 
 ### Customers
 
-Insert 5 different customers with at least 2 having a discount.
+Insert at least 5 different customers with at least 2 having a discount.
 
 ### Orders
 
 Insert at least 5 orders with each having at least 2 products.
+
+## Selecting from and manipulating the database
+
+### Selecting
+
+* Select the big boss
+* Select all department managers
+* Select all employees in the Sales department ordered by Name
+* Select all departments with employees that are born after 1990
+* Select all departments with more than 3 employees
+* Select the department having the most employees
+* Select the order having the maximum total number of products
+* Select the average discount of all customers
+
+### Maninpulating
+* Update all employees adding 1 year to their birth date
+* Double the discount of the customer with most orders
+* Delete all products with no orders
