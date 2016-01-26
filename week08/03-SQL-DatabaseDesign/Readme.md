@@ -83,7 +83,12 @@ Insert at least 5 orders with each having at least 2 products.
 * Select the order having the maximum total number of products
 * Select the average discount of all customers
 
-### Maninpulating
+### Manipulating
 * Update all employees adding 1 year to their birth date
 * Double the discount of the customer with most orders
 * Delete all products with no orders
+
+### Store Procedure
+* Create a stored procedure which returns the number of times a specific product is ordered(pass productId to the stored procedure).
+* Create a stored procedure which switch the Big Boss with regular employee
+
