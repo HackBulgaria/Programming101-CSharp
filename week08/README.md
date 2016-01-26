@@ -94,6 +94,10 @@ using(FileStream myFileStream = new FileStream("myFileName.xml", FileMode.Open))
 * [Relational databases] (https://en.wikipedia.org/wiki/Relational_database)
 * [SQL] (https://en.wikipedia.org/wiki/SQL)
 * [T-SQL](https://en.wikipedia.org/wiki/Transact-SQL)
+* [ACID] (https://en.wikipedia.org/wiki/ACID)
+* [Transacations] (https://msdn.microsoft.com/en-us/library/ms174377.aspx)
+* [Transaction Log] (https://en.wikipedia.org/wiki/Transaction_log)
+* 
 * [Data Definition Language] (https://msdn.microsoft.com/en-US/library/ff848799.aspx)
 * [Data Manipulation Language] (https://msdn.microsoft.com/en-us/library/ff848766.aspx)
 * [Databases] (https://msdn.microsoft.com/en-us/library/ms179422.aspx)
@@ -109,4 +113,8 @@ using(FileStream myFileStream = new FileStream("myFileName.xml", FileMode.Open))
 * [Database design (normalization)] (https://en.wikipedia.org/wiki/Database_normalization)
 * [Database design (doing DB normalization)] (http://databases.about.com/od/specificproducts/a/normalization.htm)
 * [Object-relational mapping] (https://en.wikipedia.org/wiki/Object-relational_mapping)
+
+# Non-relational databases
+* NoSQL (https://en.wikipedia.org/wiki/NoSQL)
+
 
