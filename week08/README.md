@@ -89,7 +89,11 @@ using(FileStream myFileStream = new FileStream("myFileName.xml", FileMode.Open))
 * [Depth-first search algorithm (DFS)](https://en.wikipedia.org/wiki/Depth-first_search)
 
 
-# SQL
+# SQL / Relational databases
+* [Relational Model] (https://en.wikipedia.org/wiki/Relational_model)
+* [Relational databases] (https://en.wikipedia.org/wiki/Relational_database)
+* [SQL] (https://en.wikipedia.org/wiki/SQL)
+* [T-SQL](https://en.wikipedia.org/wiki/Transact-SQL)
 * [Data Definition Language] (https://msdn.microsoft.com/en-US/library/ff848799.aspx)
 * [Data Manipulation Language] (https://msdn.microsoft.com/en-us/library/ff848766.aspx)
 * [Databases] (https://msdn.microsoft.com/en-us/library/ms179422.aspx)
@@ -102,4 +106,7 @@ using(FileStream myFileStream = new FileStream("myFileName.xml", FileMode.Open))
 * [Database design (1 to 1 relationship)] (https://en.wikipedia.org/wiki/One-to-one_(data_model))
 * [Database design (1 to many relationship)] (https://en.wikipedia.org/wiki/One-to-many_(data_model))
 * [Database design (many to many relationship)] (https://en.wikipedia.org/wiki/Many-to-many_(data_model))
+* [Database design (normalization)] (https://en.wikipedia.org/wiki/Database_normalization)
+* [Database design (doing DB normalization)] (http://databases.about.com/od/specificproducts/a/normalization.htm)
+* [Object-relational mapping] (https://en.wikipedia.org/wiki/Object-relational_mapping)
 
