@@ -87,3 +87,19 @@ using(FileStream myFileStream = new FileStream("myFileName.xml", FileMode.Open))
 
 * [Breadth-first search algorithm (BFS)](https://en.wikipedia.org/wiki/Breadth-first_search)
 * [Depth-first search algorithm (DFS)](https://en.wikipedia.org/wiki/Depth-first_search)
+
+
+# SQL
+* [Data Definition Language] (https://msdn.microsoft.com/en-US/library/ff848799.aspx)
+* [Data Manipulation Language] (https://msdn.microsoft.com/en-us/library/ff848766.aspx)
+* [Databases] (https://msdn.microsoft.com/en-us/library/ms179422.aspx)
+* [Tables] (https://msdn.microsoft.com/en-us/library/ms189084.aspx)
+* [Indexes] (https://msdn.microsoft.com/en-us/library/ms175049.aspx)
+* [Views] (https://msdn.microsoft.com/en-us/library/ms190174.aspx)
+* [Stored Procedures] (https://msdn.microsoft.com/en-us/library/ms190782.aspx)
+* [User Defined Functions] (https://msdn.microsoft.com/en-us/library/ms191007.aspx)
+* [Triggers] (https://msdn.microsoft.com/en-us/library/ms178110.aspx)
+* [Database design (1 to 1 relationship)] (https://en.wikipedia.org/wiki/One-to-one_(data_model))
+* [Database design (1 to many relationship)] (https://en.wikipedia.org/wiki/One-to-many_(data_model))
+* [Database design (many to many relationship)] (https://en.wikipedia.org/wiki/Many-to-many_(data_model))
+
