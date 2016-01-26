@@ -4,6 +4,8 @@
 
 We will create a database for the `Hack Company` to store information about its employees, products and customers. For that purpose create a new database `HackCompany`. **For the following exercises don't use the shortcuts in SQL Management Studio but try to write the scripts manually yourself!** Create the appropriate tables and relationships between them. Don't forget to create a key column and a primary key for each table!
 
+It is a good idea to save the `.sql` scripts and save them in your repository.
+
 ### Departments and employees
 
 The company has several departments a hierarchy of employees:
