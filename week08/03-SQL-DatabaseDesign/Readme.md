@@ -2,7 +2,7 @@
 
 ## Data Definition Language
 
-We will create a database for the `Hack Company` to store information about its employees, products and customers. For that purpose create a new database `HackCompany`. **For the following exercises don't use the shortcuts in SQL Management Studio but try to write the scripts manually yourself!** Create the appropriate tables and relationships between them. Don't forget to create a key column and a primary key for each table!
+We will create a database for the `Hack Company` to store information about its employees, products and customers. For that purpose create a new database `HackCompany`. **For the following exercises don't use the shortcuts in SQL Management Studio but try to write the scripts manually yourself!** Create the appropriate tables and relationships between them. Don't forget to create a column and a primary key for each table!
 
 It is a good idea to save the `.sql` scripts and save them in your repository.
 
@@ -16,7 +16,7 @@ The company has several departments a hierarchy of employees:
   * Email - optional
   * Date of birth
   * Manager - another employee that is his/her manager. The big boss doesn't have a manager.
-  * Department - the department the employee works in
+  * Department - the department the employee works in. The big boss doesn't have a department.
 
 ### Products
 The company creates products with different categories:
@@ -42,4 +42,30 @@ Each order has:
 * Date and time of the order
 * Customer
 * Total Price
-* Each order may contain several products with different quantities - implement it as a many-to-many relationship.
+* Each order may contain several products with different quantities - implement it as a many-to-many relationship with an additional table OrderProducts.
+
+## Populating the database
+
+### Departments and employees
+
+Into the database insert 3 departments - Sales, Production, Financial.
+
+Insert an entry for the Big Boss (has no manager and department).
+
+Insert 5 employees into each of the departments. In each department there is a manager:
+* He is the manager of all other employees in the department
+* His manager is the Big Boss
+
+### Products
+
+Insert 4 product categories - Books, Music, Hardware, Software
+
+Inside each category insert at least 3 products
+
+### Customers
+
+Insert 5 different customers with at least 2 having a discount.
+
+### Orders
+
+Insert at least 5 orders with each having at least 2 products.
