@@ -5,13 +5,13 @@ ADO.NET is a library in .Net Framework for working with databases (and other dat
 ## Data providers
 
 ADO.NET offers data providers to connect to different types of data sources ([.NET Framework Data Providers](https://msdn.microsoft.com/en-us/library/a6cd7c08%28v=vs.110%29.aspx)). The most commonly used are:
-* .NET Framework Data Provider for ODBC - ODBC is a standard for connecting to SQL data sources. With that provider you can connect to MS SQL Server, Oracle, even an Excel file.
+* .NET Framework Data Provider for ODBC - ODBC is a standard for connecting to SQL data sources. With that provider you can connect to MS SQL Server, Oracle and many more, even an Excel file.
 * .NET Framework Data Provider for SQL Server - a data provider used specifically with Microsoft SQL Server
 * .NET Framework Data Provider for Oracle - a data provider used specifically with Oracle databases
 
 ## Connecting to the data source
 
-We make a connection to the sql datasource using a special Connection object. Each data provider has its own connection class inheriting fro [DbConnection](https://msdn.microsoft.com/en-us/library/system.data.common.dbconnection%28v=vs.110%29.aspx). We'll be using the SQL Server data provider which comes with the [SqlConnection](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlconnection%28v=vs.110%29.aspx) class
+We make a connection to the sql datasource using a special Connection object. Each data provider has its own connection class inheriting from [DbConnection](https://msdn.microsoft.com/en-us/library/system.data.common.dbconnection%28v=vs.110%29.aspx). We'll be using the SQL Server data provider which comes with the [SqlConnection](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlconnection%28v=vs.110%29.aspx) class
 
 We pass a special connection string to the connection object, which is used to establish a connection to the data source:
 
