@@ -16,7 +16,12 @@ We make a connection to the sql datasource using a special Connection object. Ea
 We pass a special connection string to the connection object, which is used to establish a connection to the data source:
 
 ```csharp
-TODO: do it
+using (SqlConnection connection = new SqlConnection(connectionString))
+{
+    connection.Open();
+    
+    // ...
+}
 ```
 
 Notes:
@@ -24,11 +29,25 @@ Notes:
 * Connection strings (and any other application parameters) should't be hardcoded in the code. Use the [App.config](http://stackoverflow.com/a/13043569) instead:
 
 ```xml
-TODO: do it
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2" />
+    </startup>
+  <connectionStrings>
+    <add name="AdventureWorks2012" connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=AdventureWorks2012;Integrated Security=True" providerName="System.Data.SqlClient"/>
+  </connectionStrings>
+  <appSettings>
+    <add key="MyProgramParameter" value="tra-la-la"/>
+  </appSettings>
+</configuration>
 ```
 
 ```csharp
-TODO: do it
+// first add a reference to System.Configuration
+
+string connectionString = ConfigurationManager.ConnectionStrings["AdventureWorks2012"].ConnectionString;
+string parameter = ConfigurationManager.AppSettings["MyProgramParameter"];
 ```
 
 ## Writing a command
@@ -36,7 +55,25 @@ TODO: do it
 Once we've established a connection to the database, we make queries by using a Command object ([SqlCommand](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlcommand%28v=vs.110%29.aspx)):
 
 ```csharp
-TODO: do it
+string connectionString = ConfigurationManager.ConnectionStrings["AdventureWorks2012"].ConnectionString;
+
+string query =
+@"SELECT [BusinessEntityID]
+      ,[PersonType]
+      ,[Title]
+      ,[FirstName]
+      ,[MiddleName]
+      ,[LastName]
+FROM [Person].[Person]";
+
+using (var connection = new SqlConnection(connectionString))
+{
+    connection.Open();
+
+    var command = new SqlCommand(query, connection);
+
+    //...
+}
 ```
 
 ## Executing the command and retrieving data
@@ -45,21 +82,169 @@ There are several types of command execution we can use:
 
 * [ExecuteNonQuery()](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlcommand.executenonquery(v=vs.110).aspx) - used for executing commands that don't return data. It only returns the numer of affected rows
 ```csharp
-TODO: do it
+string query =
+@"UPDATE Person.Person
+SET Title = 'Mr.'
+WHERE FirstName = 'Pesho'";
+
+var command = new SqlCommand(query, connection);
+
+int affectedRows = command.ExecuteNonQuery();
 ```
 * [ExecuteScalar()](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlcommand.executescalar(v=vs.110).aspx) - used for queries that return only 1 value
 ```csharp
-TODO: do it
+string query =
+@"SELECT MAX(p.FirstName)
+FROM Person.Person p";
+
+var command = new SqlCommand(query, connection);
+
+string lastPerson = (string)command.ExecuteScalar();
 ```
 * [ExecuteReader()](https://msdn.microsoft.com/en-us/library/9kcbe65k(v=vs.110).aspx) - returns a data reader, which behaves like the readers that read from a file - it traverses the rows of the result sequentially one at a time
 ```csharp
-TODO: do it
+private static string GetStringOrNull(object value)
+{
+    if(value is DBNull)
+    {
+        return null;
+    }
+    else
+    {
+        return (string)value;
+    }
+}
+
+//...
+
+string query =
+@"SELECT TOP 100 [BusinessEntityID]
+      ,[Title]
+      ,[FirstName]
+      ,[MiddleName]
+      ,[LastName]
+FROM [Person].[Person]";
+
+using (var connection = new SqlConnection(connectionString))
+{
+    connection.Open();
+
+    var command = new SqlCommand(query, connection);
+
+    using (var reader = command.ExecuteReader())
+    {
+        while(reader.Read())
+        {
+            string title = GetStringOrNull(reader["Title"]);
+            string first = GetStringOrNull(reader["FirstName"]);
+            string middle = GetStringOrNull(reader["MiddleName"]);
+            string last = GetStringOrNull(reader["LastName"]);
+
+            string fullname = string.Format("{0} {1} {2} {3}", title, first, middle, last);
+            Console.WriteLine(fullname);
+        }
+    }
+}
 ```
 * [Using a DataAdapter](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqldataadapter%28v=vs.110%29.aspx) - with a datadapter we can read the entire result set at once (unlike the DataReader) - sometimes it is useful but beware of large reult sets. In ths case we use it to populate [DataSets](https://msdn.microsoft.com/en-us/library/system.data.dataset%28v=vs.110%29.aspx) and [DataTables](https://msdn.microsoft.com/en-us/library/system.data.datatable%28v=vs.110%29.aspx) that store the information
 ```csharp
-TODO: do it
+private static string GetStringOrNull(object value)
+{
+    if(value is DBNull)
+    {
+        return null;
+    }
+    else
+    {
+        return (string)value;
+    }
+}
+
+//...
+
+string query =
+@"SELECT TOP 100 [BusinessEntityID]
+      ,[Title]
+      ,[FirstName]
+      ,[MiddleName]
+      ,[LastName]
+FROM [Person].[Person]";
+
+DataTable table = new DataTable();
+using (var connection = new SqlConnection(connectionString))
+{
+    connection.Open();
+
+    var command = new SqlCommand(query, connection);
+
+    var adapter = new SqlDataAdapter();
+    adapter.SelectCommand = command;
+
+    adapter.Fill(table);
+}
+
+foreach(DataRow row in table.Rows)
+{
+    string title = GetStringOrNull(row["Title"]);
+    string first = GetStringOrNull(row["FirstName"]);
+    string middle = GetStringOrNull(row["MiddleName"]);
+    string last = GetStringOrNull(row["LastName"]);
+
+    string fullname = string.Format("{0} {1} {2} {3}", title, first, middle, last);
+    Console.WriteLine(fullname);
+}
 ```
 
 ## Parameters
 
-TODO
+We can also pass parameters to queries. All parameters start with a `@` symbol. **Important: always use parameters instead of concatenating the query string to prevent SQL injection!**
+
+```csharp
+private static string GetStringOrNull(object value)
+{
+    if(value is DBNull)
+    {
+        return null;
+    }
+    else
+    {
+        return (string)value;
+    }
+}
+
+//...
+
+string query =
+@"SELECT TOP 100 [BusinessEntityID]
+      ,[Title]
+      ,[FirstName]
+      ,[MiddleName]
+      ,[LastName]
+FROM [Person].[Person]
+WHERE FirstName = @FirstName";
+
+using (var connection = new SqlConnection(connectionString))
+{
+    connection.Open();
+
+    var command = new SqlCommand(query, connection);
+
+    var firstNameParameter = new SqlParameter("@FirstName", SqlDbType.NVarChar, 50);
+    firstNameParameter.Value = "Mary";
+    command.Parameters.Add(firstNameParameter);
+
+    using (var reader = command.ExecuteReader())
+    {
+        while (reader.Read())
+        {
+            string title = GetStringOrNull(reader["Title"]);
+            string first = GetStringOrNull(reader["FirstName"]);
+            string middle = GetStringOrNull(reader["MiddleName"]);
+            string last = GetStringOrNull(reader["LastName"]);
+
+            string fullname = string.Format("{0} {1} {2} {3}", title, first, middle, last);
+            Console.WriteLine(fullname);
+        }
+    }
+}
+```
