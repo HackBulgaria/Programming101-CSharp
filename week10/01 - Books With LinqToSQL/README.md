@@ -67,7 +67,7 @@ If we search for information about: *Lord of the* we might get:
 *Lord of the Rings*, *Lord of the dance* or what ever else we have in the library.
 
 * Loan a book to a user:
-** You will want to keep track of the books you give to other people - to whom you have given WHAT book, when you have given it away and when do you expect it.
-** you should mark when a book is returned.
-** It will be up to you to think how to know which book has been given away, and wich is not.
+..* You will want to keep track of the books you give to other people - to whom you have given WHAT book, when you have given it away and when do you expect it.
+..* you should mark when a book is returned.
+..* It will be up to you to think how to know which book has been given away, and wich is not.
 
