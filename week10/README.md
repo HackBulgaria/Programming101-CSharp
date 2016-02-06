@@ -13,3 +13,5 @@ This week we wil start exploring Object relational mappers
 [A very comperhensive website tutorial](http://www.entityframeworktutorial.net/EntityFramework5/entity-framework5-introduction.aspx)
 
 [YouTube tutorial](https://www.youtube.com/watch?v=t7wlW4CWh8s)
+
+[CodeFirst exsmple](https://msdn.microsoft.com/en-us/data/jj193542.aspx)
