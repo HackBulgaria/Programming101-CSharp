@@ -1,6 +1,6 @@
 #Some helpful methods
 ## Password security
-* (How to handle hash and salt)[https://msdn.microsoft.com/en-us/library/system.security.cryptography.rngcryptoserviceprovider.aspx]
+* [How to handle hash and salt](https://msdn.microsoft.com/en-us/library/system.security.cryptography.rngcryptoserviceprovider.aspx)
 
 Ticket system part one
 Recently we have noticed that the experience of buying a ticket for a train or bus is somewhat cumbersome. So we are going to make a superior system(and maybe make some money out of it).
