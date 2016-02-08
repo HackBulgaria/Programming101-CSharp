@@ -1,5 +1,5 @@
 #ORMs
-This week we wil start exploring Object relational mappers
+This week we will start exploring Object relational mappers
 
 ## LINQ to SQL
 [YouTube tutorial](https://www.youtube.com/watch?v=bsncc8dYIgY)
