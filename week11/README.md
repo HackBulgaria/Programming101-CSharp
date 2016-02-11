@@ -75,3 +75,49 @@ Another group of controls is designed to display data to the user. For example, 
 we want to display a database table, you can use the DataGridView. For displaying
 simple list data you can use the ListBox or ListView. For displaying hierarchical
 data, you can use the TreeView.
+
+## WPF (Windows Presentation Foundation)
+
+WPF is the successor of Windows Forms and it tries to resolve most of it drawbacks such as:
+
+* Lack of flexibility/customization abilities for the standard controls
+* Input handling issues
+* Issues on high pixel density monitors
+* Lack of flexibility when creating data centric applications.
+* Lack of hardware acceleration
+
+WPF introduces XAML (Extensible Application Markup Language) which stands for
+declaratively creating the user interface of the form and separating the UI
+logic and the data logic.
+
+You can redefine the appearance of standard controls in XAML by redefining their
+templates or applying styles to them.
+
+Input handling is much more flexible as all events pass through all related controls
+goint from the parent to its children first (tunnelling event) and then fron the children
+to their parents (bubbling events).
+
+The measurement unit in WPF is device independent. WPF controls use double for all coordinates
+and sizes and this allows the framework to automatically scale our application so it looks good
+on all different DPI resolutions.
+
+WPF improves the DataBinding concept which was not working very well in Windows Forms. Data-centric
+applications can be created almost entirely declaratively.
+
+WPF uses the GPU to accelerate graphics rendering and WPF applications usually look and feel much
+more smooth than applications written in Windows Forms. It can also animate properties of the objects.
+
+### XAML
+http://www.wpftutorial.net/XAML.html
+
+### Controls and ControlTemplates
+http://www.wpftutorial.net/templates.html
+
+### Layout Containers
+http://www.wpftutorial.net/LayoutProperties.html
+
+### Styles
+http://www.wpf-tutorial.com/styles/using-styles/
+
+### Animations
+http://www.wpf-tutorial.com/styles/trigger-animations-enteractions-exitactions/
