@@ -121,3 +121,70 @@ http://www.wpf-tutorial.com/styles/using-styles/
 
 ### Animations
 http://www.wpf-tutorial.com/styles/trigger-animations-enteractions-exitactions/
+
+## DataBinding
+
+The process of displaying and updating properties of data objects in other components (controls for example)
+is called DataBinding. DataBinding basically "binds" properties of two different object to each other
+so that when we change the properties of one of the objects, this automatically updates the corresponding
+bound property of the other.
+
+The most basic way DataBinding is implemented is by using PropertyChanged event from the INotifyPropertyChanged
+interface. Each of the bound objects listens for the event of the other object and updates its bound property.
+
+### Simple databinding
+
+We call simple databinding the process of binding two properties of two objects only. For example,
+when we bind the Employee.FirstName property to the EmployeeTextBox.Text property to allow editing
+the first name of an employee in a text box.
+
+### DataBinding with collections
+
+In some cases we might want to bind the two collections so that each of them reflects the changes
+in the other and both of their contents are kept the same. This is needed for example when we want to list
+all employees in a ListBox control and allow create/read/update/delete operations (CRUD).
+
+### DataBinding in Windows Forms
+
+`Simple DataBinding` in Windows Forms is done through the DataBindings property. Each control has
+this property. It is basically a collection which contains objects of type `Binding` and each
+of these objects describes the source object as well as the properties to bind.
+
+(Simple databinding in Windows Forms)[https://msdn.microsoft.com/en-us/library/system.windows.forms.control.databindings%28v=vs.110%29.aspx]
+
+`Binding to collections` is supported by only a small set of controls: ListBox, ComboBox, DataGridView. They both have the DataSource property
+which should be set with a collection of objects. DataGridView has columns, so it can display multiple properties of the source collection's objects.
+ListBox can display only one item at once, so it has the DisplayMember and ValueMember properties which should be set with
+the name of the poperties of the collection's object to which the members should be bound.
+
+* (Ways to bind the DataGridView)[http://www.c-sharpcorner.com/UploadFile/deveshomar/ways-to-bind-datagridview-in-window-forms-C-Sharp/]
+* (ListBox tutorial)[http://www.dotnetperls.com/listbox]
+
+### DataBinding in WPF
+
+DataBinding in WPF is much more powerful and flexible, but it keeps the same principles.
+
+(DataBinding in WPF)[http://www.wpftutorial.net/Databinding.html]
+
+In WPF, binding is mostly done in XAML via the "{Binding *}" syntax. 
+
+In WPF, each element has the DataContext property which can be set with a data object which will be used
+for the base of most of our bindings. For example, if we have a form which edits employees, we can set the
+DataContext of the form to be the edited Employee object, and then use "{Binding FirstName}", "{Binding LastName}"
+to bind the text box editors to the properties of the employee.
+
+(XAML Binding Basics)[http://blogs.msdn.com/b/jerrynixon/archive/2012/10/12/xaml-binding-basics-101.aspx]
+
+WPF allows us to bind to sub-properties. For example, if our Employee had an `Address` property which had a
+`Street` property, we can bind to it by simply writing "{Binding Address.Street}".
+
+WPF also allows us to specify converters when binding to data. Converters are used when the two properties we
+want to bind are from a different type. For example, if we want to set the `IsEnabled` property of a text box
+to true only when the FirstName is not empty, we should use a converter.
+
+(WPF Converters)[http://www.wpftutorial.net/ValueConverters.html]
+
+Binding in WPF is not limited to the properties of the DataContext only. We can specify a source object in
+each binding.
+
+(Binding sources in WPF)[http://www.c-sharpcorner.com/UploadFile/41e70f/binding-source-objects-in-wpf/]
