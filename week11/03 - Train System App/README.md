@@ -1,6 +1,6 @@
 # Ticket System App
 
-Extend the (Ticket System)[https://github.com/HackBulgaria/Programming101-CSharp/tree/master/week10/02%20-%20Ticket%20System]
+Extend the [Ticket System](https://github.com/HackBulgaria/Programming101-CSharp/tree/master/week10/02%20-%20Ticket%20System)
 task from the previous week and allow all operations to be done via the graphical interface.
 
 Add a column IsAdmin to the Users table to be able to distinguish between
