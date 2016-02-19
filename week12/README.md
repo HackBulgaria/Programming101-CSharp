@@ -26,7 +26,6 @@ Asp.Net is .Net's framework for web development. It has three main approaches fo
 * Web Pages - these are for casual development, rarely used by professional developers
 
 ## Asp.Net Web Forms
-* TODO: an intro tutorial to web forms - a video or smth
 * [Introduction to Web Forms](https://msdn.microsoft.com/en-us/library/ms973868.aspx)
 * There are two types of controls:
   * HTML controls - ordinary html controls, that can be added a runat="server" attribute and can support only two events: `OnServerClick`, `OnServerChange`
@@ -37,9 +36,8 @@ Asp.Net is .Net's framework for web development. It has three main approaches fo
   * Session State
   * Application State
   * Cookies
-* [Web Forms databinding expressions](https://msdn.microsoft.com/en-us/library/bda9bbfx%28v=vs.71%29.aspx), [examples (see the second column)](http://haacked.com/archive/2011/01/06/razor-syntax-quick-reference.aspx/)
+* [Web Forms databinding expressions](https://msdn.microsoft.com/en-us/library/bda9bbfx%28v=vs.71%29.aspx), [examples (see the second column)](http://haacked.com/archive/2011/01/06/razor-syntax-quick-reference.aspx/) and [here](http://weblogs.asp.net/ahmedmoosa/embedded-code-and-inline-server-tags)
 * Web Forms data binding controls
-  * TODO: link, video etc
 * [Validators](http://www.codemag.com/article/0307101)
 
 ## Working with IIS
