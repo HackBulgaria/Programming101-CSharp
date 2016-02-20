@@ -38,7 +38,17 @@ Asp.Net is .Net's framework for web development. It has three main approaches fo
   * Cookies
 * [Web Forms databinding expressions](https://msdn.microsoft.com/en-us/library/bda9bbfx%28v=vs.71%29.aspx), [examples (see the second column)](http://haacked.com/archive/2011/01/06/razor-syntax-quick-reference.aspx/) and [here](http://weblogs.asp.net/ahmedmoosa/embedded-code-and-inline-server-tags)
 * Web Forms data binding controls
-* [Validators](http://www.codemag.com/article/0307101)
+* [Validators](http://www.codemag.com/article/0307101). In order for unobtrusive validation mode to work you should install jquery and add the following code in Application_start() in Global.asax:
+```csharp
+ScriptManager.ScriptResourceMapping.AddDefinition("jquery",
+                new ScriptResourceDefinition
+                {
+                    Path = "~/scripts/jquery-2.2.0.min.js",
+                    DebugPath = "~/scripts/jquery-2.2.0.js",
+                    CdnPath = "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.0.min.js",
+                    CdnDebugPath = "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.0.js"
+                });
+```
 
 ## Working with IIS
 [How IIS processes requests](http://abhijitjana.net/2010/03/14/beginner%E2%80%99s-guide-how-iis-process-asp-net-request/)
