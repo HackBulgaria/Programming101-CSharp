@@ -58,12 +58,12 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery",
 
 ## Presentation Layer 
 
-Design Patterns[https://msdn.microsoft.com/en-us/library/ff647343.aspx]
+* Design Patterns[https://msdn.microsoft.com/en-us/library/ff647343.aspx]
 
 ## Web related technologies
 
-HTML [http://www.w3schools.com/html/]
-CSS [http://www.w3schools.com/css/]
-JavaScript [http://www.w3schools.com/js/]
-AJAX [http://www.w3schools.com/ajax/]
-JQuery [http://www.w3schools.com/jquery/]
+* HTML [http://www.w3schools.com/html/]
+* CSS [http://www.w3schools.com/css/]
+* JavaScript [http://www.w3schools.com/js/]
+* AJAX [http://www.w3schools.com/ajax/]
+* JQuery [http://www.w3schools.com/jquery/]
