@@ -59,7 +59,8 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery",
 ## Presentation Layer 
 
 * [Design Patterns](https://msdn.microsoft.com/en-us/library/ff647343.aspx)
-* [Best Practices] (https://msdn.microsoft.com/en-us/library/ee658081.aspx)
+* [Best Practices](https://msdn.microsoft.com/en-us/library/ee658081.aspx)
+
 ## Web related technologies
 
 * [HTML](http://www.w3schools.com/html/)
