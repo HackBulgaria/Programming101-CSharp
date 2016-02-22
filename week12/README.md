@@ -54,3 +54,16 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery",
 [How IIS processes requests](http://abhijitjana.net/2010/03/14/beginner%E2%80%99s-guide-how-iis-process-asp-net-request/)
 
 [Working with IIS](https://msdn.microsoft.com/en-us/library/aa544790%28v=cs.70%29.aspx)
+
+
+## Presentation Layer 
+
+Design Patterns[https://msdn.microsoft.com/en-us/library/ff647343.aspx]
+
+## Web related technologies
+
+HTML [http://www.w3schools.com/html/]
+CSS [http://www.w3schools.com/css/]
+JavaScript [http://www.w3schools.com/js/]
+AJAX [http://www.w3schools.com/ajax/]
+JQuery [http://www.w3schools.com/jquery/]
