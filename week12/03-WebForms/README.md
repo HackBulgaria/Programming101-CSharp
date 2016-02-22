@@ -31,3 +31,18 @@ Add an edit page to add new or edit an existing employee (Name/Email/BirthDate).
 Use appropriate editors for each field and try to validate the input in the email field.
 
 Showing a validation error if the field contains incorrect data.
+
+## Employee Editor
+
+Create a web page which shows all employees in 4 list views.
+In the first one show only employees that has name starting with A-G
+In the second list view shows only employees that has name starting with G-N
+In the third list view shows .... with N-T
+In the fourth list view shows .... with T-Z.
+The list view must show all employee's properties.
+Instead of creating 4 list views create a Repeater control.
+Inside the repeater's template put a list view control.
+Use Repeater OnItemDataBound event in order to bind all values to the list view.
+Change the format of the BirthDate column inside the list view to :
+1)'yyyy-mm-dd' if the BirthDate is after 1990
+2)'yyyy/mm/dd' if the BirthDate is before 1990
