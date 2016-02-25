@@ -8,7 +8,7 @@
 ## ASP.NET MVC Fundamentals
 * [Asp.Net MVC overview](https://msdn.microsoft.com/en-us/library/dd381412(v=vs.108).aspx)
 * [Controllers](http://www.asp.net/mvc/overview/older-versions-1/controllers-and-routing/aspnet-mvc-controllers-overview-cs)
-* [Models](http://www.asp.net/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs)
+* [Models](https://msdn.microsoft.com/en-us/library/dd410405(v=vs.100).aspx)
 * [Views](http://www.asp.net/mvc/overview/older-versions-1/views/asp-net-mvc-views-overview-cs)
 * [Razor](http://www.asp.net/web-pages/overview/getting-started/introducing-razor-syntax-c)
 * [Layout](http://www.w3schools.com/aspnet/mvc_layout.asp)
