@@ -4,10 +4,9 @@
 ## MVC Pattern
 
 * [Basics](https://msdn.microsoft.com/en-us/library/ff649643.aspx)
+
+## ASP.NET MVC Fundamentals
 * [Asp.Net MVC overview](https://msdn.microsoft.com/en-us/library/dd381412(v=vs.108).aspx)
-
-## Fundamentals
-
 * [Controllers](http://www.asp.net/mvc/overview/older-versions-1/controllers-and-routing/aspnet-mvc-controllers-overview-cs)
 * [Models](http://www.asp.net/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs)
 * [Views](http://www.asp.net/mvc/overview/older-versions-1/views/asp-net-mvc-views-overview-cs)
