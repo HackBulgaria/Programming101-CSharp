@@ -29,3 +29,4 @@
 * [DOM](http://www.w3schools.com/js/js_htmldom.asp)
 * [Debug JavaScript Code in Browser(Chrome)](https://developer.chrome.com/devtools/docs/javascript-debugging)
 * [HTML 5](https://en.wikipedia.org/wiki/HTML5)
+* [Using browser plug-ins for performance improvement](http://yslow.org/)
