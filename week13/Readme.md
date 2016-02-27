@@ -30,3 +30,4 @@
 * [Debug JavaScript Code in Browser(Chrome)](https://developer.chrome.com/devtools/docs/javascript-debugging)
 * [HTML 5](https://en.wikipedia.org/wiki/HTML5)
 * [Using browser plug-ins for performance improvement](http://yslow.org/)
+* [XSS](http://www.acunetix.com/websitesecurity/cross-site-scripting/)
