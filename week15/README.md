@@ -15,6 +15,7 @@ Software design and Architecture:
 * [Cohesion] (https://en.wikipedia.org/wiki/Cohesion_(computer_science))
 * [Coupling] (https://en.wikipedia.org/wiki/Coupling_(computer_programming))
 * [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language)
+* [Solid Principles](http://www.codeproject.com/Articles/703634/SOLID-architecture-principles-using-simple-Csharp)
 * [Design Patterns] (https://en.wikipedia.org/wiki/Software_design_pattern)
 * [Modularity] (https://msdn.microsoft.com/en-us/library/ff921069(v=pandp.20).aspx)
 * [Enterprise Application Patterns] (http://martinfowler.com/eaaCatalog/)
