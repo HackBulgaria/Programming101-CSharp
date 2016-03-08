@@ -2,7 +2,7 @@
 
 ## Low-level improvements
 
-* Coding Standards [https://msdn.microsoft.com/en-us/library/ff926074.aspx]
+* Coding Standards (https://msdn.microsoft.com/en-us/library/ff926074.aspx)
 * Naming Conventions [https://msdn.microsoft.com/en-us/library/ms229002(v=vs.110).aspx]
 * Framework Design Guidelines [https://msdn.microsoft.com/en-us/library/ms229042.aspx]
 * Internal Coding Guidlines [https://blogs.msdn.microsoft.com/brada/2005/01/26/internal-coding-guidelines/]
