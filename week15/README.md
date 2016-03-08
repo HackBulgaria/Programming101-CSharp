@@ -1,7 +1,6 @@
 # Writing High Quality Code
 
 ## Low-level improvements
-### Low-level improvements
 
 * Coding Standards [https://msdn.microsoft.com/en-us/library/ff926074.aspx]
 * Naming Conventions [https://msdn.microsoft.com/en-us/library/ms229002(v=vs.110).aspx]
