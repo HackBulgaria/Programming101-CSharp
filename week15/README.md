@@ -28,3 +28,11 @@ Software design and Architecture:
 * [Resharper] (https://www.jetbrains.com/resharper/)
 * [Just Code] (http://www.telerik.com/products/justcode.aspx)
 
+## Process improvement
+* [Code Review] (https://en.wikipedia.org/wiki/Code_review)
+* [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming)
+* [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration)
+* [Unit Testing](https://en.wikipedia.org/wiki/Unit_testing)
+* [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming)
+* [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development)
+
