@@ -9,6 +9,9 @@ The course is happening thanks to the following companies:
 [![Nemetschek Bulgaria](partners/Nemetschek.png)](http://www.nemetschek.bg/)
 [![SAP Labs Bulgaria](partners/SAP_Labs_Bulgaria.png)](https://go.sap.com/bulgaria/index.html)
 
+## Hosting Partners
+
+[![SiteGround](partners/SITEGROUND.png)](https://www.siteground.com/)
 
 ## Course Program
 
