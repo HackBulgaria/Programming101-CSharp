@@ -40,7 +40,7 @@ Software design and Architecture:
 # Threads and Tasks
 
 ## Threads
-* [Tutorial](http://www.albahari.com/threading/)
+* [Tutorial](http://www.albahari.com/threading/), [another tutorial](https://msdn.microsoft.com/en-us/library/hh191443.aspx)
 * Creating and starting a thread
 * Thread synchronization - `lock()`
 * [Volatile keyword](https://msdn.microsoft.com/en-us/library/x13ttww7.aspx)
