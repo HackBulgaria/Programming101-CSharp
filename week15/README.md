@@ -37,3 +37,21 @@ Software design and Architecture:
 * [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming)
 * [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development)
 
+# Threads and Tasks
+
+## Threads
+* [Tutorial](http://www.albahari.com/threading/)
+* Creating and starting a thread
+* Thread synchronization - `lock()`
+* [Volatile keyword](https://msdn.microsoft.com/en-us/library/x13ttww7.aspx)
+* Background threads
+* .Net desktop applications have a special UI (or main) thread that updates the UI. All Ui-related stuff should be called from it. If another thread has to update the UI it should call:
+  * [Control.Invoke()](https://msdn.microsoft.com/en-us/library/system.windows.forms.control.invoke%28v=vs.110%29.aspx) in Windows Forms
+  * [Dispatcher.Invoke()](https://msdn.microsoft.com/en-us/library/system.windows.threading.dispatcher.invoke%28v=vs.110%29.aspx) in WPF
+
+## Tasks
+* [Tutorial](https://stephenhaunts.com/2014/10/10/simple-async-await-example-for-asynchronous-programming/)
+* Creating Tasks - `Task.Run()`
+* use `await` to retrieve the Task result
+* use `async` for methods that use `await`
+* [Task cancellation](https://msdn.microsoft.com/en-us/library/dd997396%28v=vs.110%29.aspx)
