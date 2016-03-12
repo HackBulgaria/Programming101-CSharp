@@ -40,7 +40,7 @@ Software design and Architecture:
 # Threads and Tasks
 
 ## Threads
-* [Tutorial](http://www.albahari.com/threading/), [another tutorial](https://msdn.microsoft.com/en-us/library/hh191443.aspx)
+* [Tutorial](http://www.albahari.com/threading/)
 * Creating and starting a thread
 * Thread synchronization - `lock()`
 * [Volatile keyword](https://msdn.microsoft.com/en-us/library/x13ttww7.aspx)
@@ -50,7 +50,7 @@ Software design and Architecture:
   * [Dispatcher.Invoke()](https://msdn.microsoft.com/en-us/library/system.windows.threading.dispatcher.invoke%28v=vs.110%29.aspx) in WPF
 
 ## Tasks
-* [Tutorial](https://stephenhaunts.com/2014/10/10/simple-async-await-example-for-asynchronous-programming/)
+* [Tutorial](https://stephenhaunts.com/2014/10/10/simple-async-await-example-for-asynchronous-programming/), [another tutorial](https://msdn.microsoft.com/en-us/library/hh191443.aspx)
 * Creating Tasks - `Task.Run()`
 * use `await` to retrieve the Task result
 * use `async` for methods that use `await`
