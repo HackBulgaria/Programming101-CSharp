@@ -19,6 +19,9 @@ Requirements:
 * When the user clicks Load, the text of the button changes to Cancel
   * If the user clicks Cancel before the page has loaded, the loading should be canceled
 
+Hints:
+* To fetch a web page you can use the `WebClient` class
+
 ## Bonus: Circle Killer
 Extend the APM Calculator with automatically spawining circles that the user has to click:
 * In predefined intervals small circles spawn randomly on the surface
