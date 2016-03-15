@@ -6,3 +6,6 @@ In computer science, reflection is the ability of a computer program to examine 
 * https://dotnetcademy.net/Learn/4/Pages/1
 * http://www.codeproject.com/Articles/17269/Reflection-in-C-Tutorial
 * http://stackoverflow.com/a/9458673
+
+## Custom Attributes
+* https://msdn.microsoft.com/en-us/library/sw480ze8.aspx
